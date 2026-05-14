@@ -28,10 +28,7 @@ export default function Hero() {
             Digital Marketing & Generative AI Professional
           </h2>
           
-          <p className="text-gray-400 max-w-lg">
-            Blending AI, Creativity, Automation & Modern Digital Strategy to build next-generation experiences.
-          </p>
-          
+
           {/* Animated keywords */}
           <div className="h-8 overflow-hidden relative border-l-2 border-[#aa3bff] pl-4">
             <motion.div 

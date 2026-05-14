@@ -6,11 +6,12 @@ export default function Certifications() {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
 
   const certs = [
+    "Generative AI Mastermind – Outskill Growth School",
+    "Vibe Coding Certification – LinkedIn Learning",
     "Google Digital Garage – Fundamentals of Digital Marketing",
     "HubSpot Content Marketing Certification",
     "Hootsuite Social Media Marketing Certification",
-    "Digital Marketing Certification – Skill Development Institute",
-    "Project Management Certification – Microsoft & LinkedIn"
+    "Digital Marketing Certification – Skill Development Institute"
   ];
 
   return (

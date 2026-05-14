@@ -33,8 +33,20 @@ export default function Navbar() {
           <div className="font-display font-bold text-xl tracking-wide flex items-center">
             <span className="text-white mr-1.5">Munwar</span>
             <div className="relative overflow-hidden h-8 w-10 flex items-center">
-              <span className="text-white group-hover:-translate-y-full transition-transform duration-500 absolute left-0 flex items-center h-full">Ali</span>
-              <span className="text-gradient translate-y-full group-hover:translate-y-0 transition-transform duration-500 absolute left-0 flex items-center h-full font-black drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]">AI</span>
+              <motion.span 
+                animate={{ y: ["0%", "-100%", "-100%", "0%", "0%"] }}
+                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", times: [0, 0.2, 0.5, 0.7, 1] }}
+                className="text-white absolute left-0 flex items-center h-full"
+              >
+                Ali
+              </motion.span>
+              <motion.span 
+                animate={{ y: ["100%", "0%", "0%", "100%", "100%"] }}
+                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", times: [0, 0.2, 0.5, 0.7, 1] }}
+                className="text-gradient absolute left-0 flex items-center h-full font-black drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]"
+              >
+                AI
+              </motion.span>
             </div>
           </div>
         </a>
