@@ -13,6 +13,7 @@ export default function Footer() {
           <a href="#home" className="text-sm text-gray-400 hover:text-white transition-colors">Home</a>
           <a href="#about" className="text-sm text-gray-400 hover:text-white transition-colors">About</a>
           <a href="#contact" className="text-sm text-gray-400 hover:text-white transition-colors">Contact</a>
+          <a href="https://www.munwarali.in/sitemap.xml" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">Sitemap</a>
         </div>
 
         <div className="w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent mb-8"></div>
