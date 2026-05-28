@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Phone, Mail, Link, MapPin } from 'lucide-react';
+import { Phone, Mail, Link, MapPin, Send } from 'lucide-react';
 
 export default function Contact() {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
@@ -79,14 +79,24 @@ export default function Contact() {
           >
             <div className="absolute -inset-0.5 bg-gradient-to-tr from-[#00d2ff] to-[#aa3bff] rounded-3xl opacity-20 blur-xl"></div>
             
-            <div className="relative z-10 w-full h-[500px] rounded-xl overflow-hidden bg-black/30 border border-white/10">
-              <zapier-interfaces-page-embed 
-                page-id='cmpdy64e0002c4d8b09uonrbx' 
-                test-id='cmpdy64e0002c4d8b09uonrbx-zapier-interfaces-page-embed-iframe' 
-                no-background='false'  
-                style={{ width: '100%', height: '100%', maxWidth: '100%' }}
-              ></zapier-interfaces-page-embed>
-            </div>
+            <form className="relative z-10 flex flex-col gap-6" onSubmit={(e) => e.preventDefault()}>
+              <div>
+                <label className="block text-sm font-medium text-gray-400 mb-2">Name</label>
+                <input type="text" className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#00d2ff] transition-colors" placeholder="John Doe" />
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-400 mb-2">Email</label>
+                <input type="email" className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#aa3bff] transition-colors" placeholder="john@example.com" />
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-400 mb-2">Message</label>
+                <textarea rows="4" className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#00d2ff] transition-colors resize-none" placeholder="How can I help you?"></textarea>
+              </div>
+              <button className="w-full py-4 rounded-xl bg-gradient-to-r from-[#00d2ff] to-[#aa3bff] text-white font-bold text-lg hover:opacity-90 transition-opacity flex items-center justify-center gap-2 group box-glow">
+                Send Message
+                <Send size={20} className="group-hover:translate-x-1 transition-transform" />
+              </button>
+            </form>
           </motion.div>
         </div>
       </div>
