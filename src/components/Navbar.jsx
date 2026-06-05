@@ -14,12 +14,14 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navLinks = [
+    const navLinks = [
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
     { name: 'Skills', href: '#skills' },
     { name: 'Experience', href: '#experience' },
     { name: 'Certifications', href: '#certifications' },
+    { name: 'Store', href: '#store' },
+    { name: 'Newsletter', href: '#newsletter' },
     { name: 'Contact', href: '#contact' }
   ];
 
