@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Background3D from './components/Background3D';
 import Footer from './components/Footer';
 import FloatingWidgets from './components/FloatingWidgets';
 
@@ -14,7 +15,8 @@ import ContactPage from './pages/ContactPage';
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#050505] text-white relative flex flex-col">
+    <div className="min-h-screen text-white relative flex flex-col bg-transparent">
+      <Background3D />
       <Navbar />
       <main className="flex-grow">
         <Routes>

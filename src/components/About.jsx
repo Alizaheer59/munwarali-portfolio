@@ -23,7 +23,9 @@ export default function About() {
             initial={{ opacity: 0, y: 30 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="glass-card p-8 rounded-3xl relative"
+            className="glass-card p-8 rounded-3xl relative transform-gpu"
+            style={{ transformStyle: "preserve-3d", perspective: "1000px" }}
+            whileHover={{ scale: 1.05, rotateX: 5, rotateY: -5 }}
           >
             <div className="absolute -inset-0.5 bg-gradient-to-tr from-[#00d2ff] to-[#aa3bff] rounded-3xl opacity-20 blur-sm"></div>
             <div className="relative z-10 text-center">
