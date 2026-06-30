@@ -3,6 +3,7 @@ import SEO from '../components/SEO';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Skills from '../components/Skills';
+import AIToolkit from '../components/AIToolkit';
 import Experience from '../components/Experience';
 import Education from '../components/Education';
 import Certifications from '../components/Certifications';
@@ -44,6 +45,7 @@ export default function Home() {
       <Hero />
       <About />
       <Skills />
+      <AIToolkit />
       <Experience />
       <Education />
       <Certifications />

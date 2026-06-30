@@ -1,0 +1,230 @@
+import React, { useEffect, useState } from 'react';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import { 
+  MessageSquareText, 
+  Mic, 
+  Video, 
+  Image as ImageIcon, 
+  Code, 
+  TrendingUp, 
+  CheckCircle,
+  Sparkles,
+  Bot,
+  Zap,
+  Target
+} from 'lucide-react';
+
+const AnimatedCounter = ({ from, to, duration = 2 }) => {
+  const [count, setCount] = useState(from);
+  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
+
+  useEffect(() => {
+    if (inView) {
+      let startTime;
+      let animationFrame;
+
+      const animate = (timestamp) => {
+        if (!startTime) startTime = timestamp;
+        const progress = Math.min((timestamp - startTime) / (duration * 1000), 1);
+        
+        // easeOutQuart
+        const easeOut = 1 - Math.pow(1 - progress, 4);
+        setCount(Math.floor(easeOut * (to - from) + from));
+
+        if (progress < 1) {
+          animationFrame = requestAnimationFrame(animate);
+        }
+      };
+
+      animationFrame = requestAnimationFrame(animate);
+      return () => cancelAnimationFrame(animationFrame);
+    }
+  }, [inView, from, to, duration]);
+
+  return <span ref={ref}>{count}</span>;
+};
+
+const CategoryCard = ({ title, icon: Icon, tools, description, delay }) => {
+  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
+
+  return (
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 30 }}
+      animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+      transition={{ duration: 0.6, delay }}
+      className="glass-card p-8 rounded-3xl relative overflow-hidden group transform-gpu"
+      style={{ transformStyle: "preserve-3d", perspective: "1000px" }}
+      whileHover={{ scale: 1.02, rotateX: 2, rotateY: -2 }}
+    >
+      <div className="absolute inset-0 bg-gradient-to-br from-[#00d2ff]/5 to-[#aa3bff]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+      
+      <div className="relative z-10">
+        <div className="flex items-center gap-4 mb-6">
+          <div className="w-12 h-12 rounded-xl bg-gradient-to-tr from-[#00d2ff]/20 to-[#aa3bff]/20 flex items-center justify-center text-[#00d2ff] group-hover:scale-110 transition-transform duration-300">
+            <Icon size={24} />
+          </div>
+          <h3 className="text-2xl font-bold text-white group-hover:text-gradient transition-colors duration-300">{title}</h3>
+        </div>
+
+        <div className="flex flex-wrap gap-2 mb-6">
+          {tools.map((tool, idx) => (
+            <span 
+              key={idx} 
+              className="px-3 py-1 text-sm font-medium bg-white/5 border border-white/10 rounded-full text-gray-300 hover:bg-white/10 hover:border-[#00d2ff]/50 transition-all"
+            >
+              {tool}
+            </span>
+          ))}
+        </div>
+
+        <p className="text-gray-400 leading-relaxed text-sm border-t border-white/5 pt-4">
+          {description}
+        </p>
+      </div>
+    </motion.div>
+  );
+};
+
+export default function AIToolkit() {
+  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
+
+  const categories = [
+    {
+      title: "AI Content & Prompting",
+      icon: MessageSquareText,
+      tools: ["ChatGPT", "Claude AI", "Canva AI", "Gamma", "Notion AI"],
+      description: "Created high-converting content, prompt engineering, marketing assets, business documentation, presentations, workflows, research, and productivity systems."
+    },
+    {
+      title: "AI Avatar & Voice",
+      icon: Mic,
+      tools: ["HeyGen", "ElevenLabs", "Minimax"],
+      description: "Generated realistic AI avatars, multilingual voiceovers, lip-sync videos, digital presenters, and AI-powered spokesperson videos."
+    },
+    {
+      title: "AI Video Generation",
+      icon: Video,
+      tools: ["Kling AI", "Hailuo AI", "Veo 3", "Higgsfield AI"],
+      description: "Created cinematic AI videos, product advertisements, social media reels, storytelling videos, promotional content, and commercial-quality visual assets."
+    },
+    {
+      title: "AI Music & Images",
+      icon: ImageIcon,
+      tools: ["Suno AI", "Midjourney", "Nano Banana"],
+      description: "Generate professional music, AI illustrations, concept art, advertising creatives, thumbnails, branding visuals, and marketing graphics."
+    },
+    {
+      title: "Vibe Coding & Dev",
+      icon: Code,
+      tools: ["Lovable", "Replit", "Supabase", "Vercel", "Netlify", "GitHub", "VS Code", "Google Antigravity"],
+      description: "Rapidly prototype, build, deploy, and iterate AI-powered applications, landing pages, SaaS products, automation systems, and full-stack web experiences."
+    },
+    {
+      title: "Digital Marketing",
+      icon: TrendingUp,
+      tools: ["Meta Ads", "Google Ads", "Google Analytics", "Search Console", "Tag Manager", "Buffer", "WordPress", "Canva"],
+      description: "Plan, execute, analyze, and optimize digital marketing campaigns, SEO, social media management, website performance, and lead generation."
+    },
+    {
+      title: "Collaboration",
+      icon: CheckCircle,
+      tools: ["Notion", "Google Workspace", "Drive", "Docs", "Sheets", "Slides", "Zoom", "Slack", "Trello"],
+      description: "Organize projects, collaborate with teams, manage documentation, client communication, and streamline business operations."
+    }
+  ];
+
+  return (
+    <section id="toolkit" className="py-24 relative overflow-hidden">
+      {/* Background elements */}
+      <div className="absolute top-1/2 -right-1/4 w-96 h-96 bg-[#00d2ff]/10 rounded-full blur-[120px] pointer-events-none"></div>
+      <div className="absolute bottom-0 -left-1/4 w-96 h-96 bg-[#aa3bff]/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+      <div className="max-w-7xl mx-auto px-6 relative z-10">
+        
+        {/* Header Section */}
+        <motion.div
+          ref={ref}
+          initial={{ opacity: 0, y: 30 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-20"
+        >
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border border-[#00d2ff]/30 text-[#00d2ff] text-sm font-semibold mb-6">
+            <Sparkles size={16} /> AI Generalist & Strategist
+          </div>
+          <h2 className="text-4xl md:text-6xl font-bold font-display mb-6">
+            AI Toolkit & <span className="text-gradient">Technology Stack</span>
+          </h2>
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            The AI platforms, creative tools, and development technologies I use to design, automate, market, and build modern digital experiences.
+          </p>
+        </motion.div>
+
+        {/* Masonry-style Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-24">
+          {categories.map((cat, index) => (
+            <div key={index} className={index === 4 ? "md:col-span-2 lg:col-span-1" : ""}>
+               <CategoryCard 
+                  title={cat.title} 
+                  icon={cat.icon} 
+                  tools={cat.tools} 
+                  description={cat.description} 
+                  delay={index * 0.1} 
+               />
+            </div>
+          ))}
+        </div>
+
+        {/* Statistics Bar */}
+        <div className="glass-card p-10 rounded-3xl border border-white/10 mb-20 relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-r from-[#00d2ff]/10 via-transparent to-[#aa3bff]/10 opacity-50"></div>
+          
+          <div className="relative z-10 grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-white/10">
+            <div className="px-4">
+              <div className="flex items-center justify-center gap-2 text-4xl font-bold text-white mb-2">
+                <AnimatedCounter from={0} to={40} />+
+              </div>
+              <div className="text-sm text-gray-400 font-medium uppercase tracking-wider">AI Tools Explored</div>
+            </div>
+            
+            <div className="px-4">
+              <div className="flex items-center justify-center gap-2 text-4xl font-bold text-white mb-2">
+                <AnimatedCounter from={0} to={100} />+
+              </div>
+              <div className="text-sm text-gray-400 font-medium uppercase tracking-wider">AI Prompts Created</div>
+            </div>
+
+            <div className="px-4">
+              <div className="flex items-center justify-center gap-2 text-4xl font-bold text-[#00d2ff] mb-2">
+                <Bot size={36} />
+              </div>
+              <div className="text-sm text-gray-400 font-medium uppercase tracking-wider">Multiple AI Platforms</div>
+            </div>
+
+            <div className="px-4">
+              <div className="flex items-center justify-center gap-2 text-4xl font-bold text-[#aa3bff] mb-2">
+                <Zap size={36} />
+              </div>
+              <div className="text-sm text-gray-400 font-medium uppercase tracking-wider">Problem Solving & Workflows</div>
+            </div>
+          </div>
+        </div>
+
+        {/* Closing Statement */}
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          className="max-w-4xl mx-auto text-center"
+        >
+          <p className="text-2xl md:text-3xl font-light text-gray-200 leading-relaxed italic border-l-4 border-[#00d2ff] pl-8 py-2">
+            "I continuously explore emerging AI technologies to help businesses create better content, automate workflows, improve marketing performance, and build scalable digital solutions."
+          </p>
+        </motion.div>
+
+      </div>
+    </section>
+  );
+}
