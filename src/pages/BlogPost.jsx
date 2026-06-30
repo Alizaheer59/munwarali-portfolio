@@ -1,4 +1,3 @@
-import React from 'react';
 import { useParams, Navigate, Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 import SEO from '../components/SEO';

@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { motion, useAnimation } from 'framer-motion';
+import {  useEffect, useState  } from 'react';
+import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { 
   MessageSquareText, 
@@ -11,8 +11,7 @@ import {
   CheckCircle,
   Sparkles,
   Bot,
-  Zap,
-  Target
+  Zap
 } from 'lucide-react';
 
 const AnimatedCounter = ({ from, to, duration = 2 }) => {

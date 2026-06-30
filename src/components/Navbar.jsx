@@ -21,8 +21,8 @@ export default function Navbar() {
     { name: 'AI Stack', href: '#toolkit' },
     { name: 'Experience', href: '#experience' },
     { name: 'Certifications', href: '#certifications' },
-    { name: 'Store', href: '#store' },
-    { name: 'Newsletter', href: '#newsletter' },
+    { name: 'Store', href: 'https://alizaheermohammed.gumroad.com/' },
+    { name: 'Blog', href: '/blog' },
     { name: 'Contact', href: '#contact' }
   ];
 
@@ -73,6 +73,7 @@ export default function Navbar() {
 
         {/* Mobile Menu Toggle */}
         <button 
+          aria-label="Toggle Mobile Menu"
           className="lg:hidden text-white relative z-50"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >

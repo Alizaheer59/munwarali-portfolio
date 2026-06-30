@@ -32,7 +32,7 @@ export default function Contact() {
     
     try {
       // Send as text/plain to avoid CORS preflight issues with Google Apps Script
-      const response = await fetch('https://script.google.com/macros/s/AKfycbxPi29kuEjSG_NbMiECgnOoDhLLUuQEFcEQ1YqMFLAaeh9rhtVzo7NU4gU2E_E4urw/exec', {
+      await fetch('https://script.google.com/macros/s/AKfycbxPi29kuEjSG_NbMiECgnOoDhLLUuQEFcEQ1YqMFLAaeh9rhtVzo7NU4gU2E_E4urw/exec', {
         method: 'POST',
         mode: 'no-cors',
         headers: {

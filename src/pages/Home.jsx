@@ -1,4 +1,3 @@
-import React from 'react';
 import SEO from '../components/SEO';
 import Hero from '../components/Hero';
 import About from '../components/About';
@@ -8,7 +7,8 @@ import Experience from '../components/Experience';
 import Education from '../components/Education';
 import Certifications from '../components/Certifications';
 import Contact from '../components/Contact';
-import FAQ, { faqData, generateFAQSchema } from '../components/FAQ';
+import FAQ from '../components/FAQ';
+import { faqData, generateFAQSchema } from '../data/faqData';
 
 export default function Home() {
   const personSchema = {
