@@ -9,40 +9,8 @@ import {
   Code, 
   TrendingUp, 
   CheckCircle,
-  Sparkles,
-  Bot,
-  Zap
+  Sparkles
 } from 'lucide-react';
-
-const AnimatedCounter = ({ from, to, duration = 2 }) => {
-  const [count, setCount] = useState(from);
-  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
-
-  useEffect(() => {
-    if (inView) {
-      let startTime;
-      let animationFrame;
-
-      const animate = (timestamp) => {
-        if (!startTime) startTime = timestamp;
-        const progress = Math.min((timestamp - startTime) / (duration * 1000), 1);
-        
-        // easeOutQuart
-        const easeOut = 1 - Math.pow(1 - progress, 4);
-        setCount(Math.floor(easeOut * (to - from) + from));
-
-        if (progress < 1) {
-          animationFrame = requestAnimationFrame(animate);
-        }
-      };
-
-      animationFrame = requestAnimationFrame(animate);
-      return () => cancelAnimationFrame(animationFrame);
-    }
-  }, [inView, from, to, duration]);
-
-  return <span ref={ref}>{count}</span>;
-};
 
 const CategoryCard = ({ title, icon: Icon, tools, description, delay }) => {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
@@ -176,54 +144,7 @@ export default function AIToolkit() {
           ))}
         </div>
 
-        {/* Statistics Bar */}
-        <div className="glass-card p-10 rounded-3xl border border-white/10 mb-20 relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-r from-[#00d2ff]/10 via-transparent to-[#aa3bff]/10 opacity-50"></div>
-          
-          <div className="relative z-10 grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-white/10">
-            <div className="px-4">
-              <div className="flex items-center justify-center gap-2 text-4xl font-bold text-white mb-2">
-                <AnimatedCounter from={0} to={40} />+
               </div>
-              <div className="text-sm text-gray-400 font-medium uppercase tracking-wider">AI Tools Explored</div>
-            </div>
-            
-            <div className="px-4">
-              <div className="flex items-center justify-center gap-2 text-4xl font-bold text-white mb-2">
-                <AnimatedCounter from={0} to={100} />+
-              </div>
-              <div className="text-sm text-gray-400 font-medium uppercase tracking-wider">AI Prompts Created</div>
-            </div>
-
-            <div className="px-4">
-              <div className="flex items-center justify-center gap-2 text-4xl font-bold text-[#00d2ff] mb-2">
-                <Bot size={36} />
-              </div>
-              <div className="text-sm text-gray-400 font-medium uppercase tracking-wider">Multiple AI Platforms</div>
-            </div>
-
-            <div className="px-4">
-              <div className="flex items-center justify-center gap-2 text-4xl font-bold text-[#aa3bff] mb-2">
-                <Zap size={36} />
-              </div>
-              <div className="text-sm text-gray-400 font-medium uppercase tracking-wider">Problem Solving & Workflows</div>
-            </div>
-          </div>
-        </div>
-
-        {/* Closing Statement */}
-        <motion.div 
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          className="max-w-4xl mx-auto text-center"
-        >
-          <p className="text-2xl md:text-3xl font-light text-gray-200 leading-relaxed italic border-l-4 border-[#00d2ff] pl-8 py-2">
-            "I continuously explore emerging AI technologies to help businesses create better content, automate workflows, improve marketing performance, and build scalable digital solutions."
-          </p>
-        </motion.div>
-
-      </div>
     </section>
   );
 }
