@@ -20,6 +20,7 @@ export default function Navbar() {
     { name: 'Skills', href: '#skills' },
     { name: 'AI Stack', href: '#toolkit' },
     { name: 'Experience', href: '#experience' },
+    { name: 'Gallery', href: '#gallery' },
     { name: 'Certifications', href: '#certifications' },
     { name: 'Store', href: 'https://alizaheermohammed.gumroad.com/' },
     { name: 'Blog', href: '/blog' },
