@@ -5,7 +5,7 @@ const services = [
   { icon: <BrainCircuit />, title: "AI Consulting & Strategy", desc: "Align AI capabilities with your business goals for maximum impact." },
   { icon: <Workflow />, title: "Workflow Automation", desc: "Eliminate manual tasks with intelligent robotic process automation." },
   { icon: <MessageSquare />, title: "AI Chatbots & Agents", desc: "Deploy 24/7 autonomous agents for customer support and sales." },
-  { icon: <Briefcase />, title: "Enterprise AI Solutions", desc: "Custom AI infrastructure designed for massive scale and security." },
+  { icon: <Briefcase />, title: "Small Business AI Solutions", desc: "Custom AI infrastructure designed for growth and security." },
   { icon: <FileSearch />, title: "Document Intelligence", desc: "Extract, analyze, and process data from unstructured documents automatically." },
   { icon: <Database />, title: "Knowledge Management", desc: "Build private LLM systems (RAG) using your proprietary company data." },
   { icon: <Code />, title: "Custom AI Software", desc: "End-to-end development of AI-native SaaS and internal tools." },

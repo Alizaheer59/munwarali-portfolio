@@ -1,5 +1,5 @@
 
-const tech = ['Large Language Models', 'AI Agents', 'RAG (Retrieval-Augmented Generation)', 'Workflow Automation', 'API Integration', 'Databases', 'Cloud Infrastructure', 'Web Applications', 'Mobile Applications', 'Data Analytics', 'Machine Learning', 'Enterprise Integrations'];
+const tech = ['Large Language Models', 'AI Agents', 'RAG (Retrieval-Augmented Generation)', 'Workflow Automation', 'API Integration', 'Databases', 'Cloud Infrastructure', 'Web Applications', 'Mobile Applications', 'Data Analytics', 'Machine Learning', 'Business Integrations'];
 
 export default function TechExpertise() {
   return (

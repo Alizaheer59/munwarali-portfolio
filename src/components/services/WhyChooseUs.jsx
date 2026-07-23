@@ -12,7 +12,7 @@ export default function WhyChooseUs() {
         <div>
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Why Choose <span className="text-[#3B82F6]">Us</span></h2>
           <p className="text-gray-400 text-lg mb-8 leading-relaxed">
-            We don't just write code; we solve complex business problems. Our enterprise-grade solutions are designed to scale with your growth while maintaining bank-level security and privacy.
+            We don't just write code; we solve complex business problems. Our premium solutions are designed to scale with your growth while maintaining bank-level security and privacy.
           </p>
           <div className="grid sm:grid-cols-2 gap-4">
             {reasons.map((r, i) => (

@@ -10,7 +10,7 @@ export default function Testimonials() {
             "Munwar AI Labs completely transformed how we handle our internal knowledge base. Their RAG implementation saved our employees hundreds of hours in search time."
           </p>
           <div className="font-bold text-white">Director of Operations</div>
-          <div className="text-[#06B6D4] text-sm">Enterprise Logistics Co.</div>
+          <div className="text-[#06B6D4] text-sm">Local Logistics Co.</div>
         </motion.div>
       </div>
     </section>

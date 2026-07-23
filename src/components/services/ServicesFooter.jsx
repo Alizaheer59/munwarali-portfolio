@@ -7,7 +7,7 @@ export default function ServicesFooter() {
             <span>Munwar</span>
             <span className="text-[#06B6D4] text-sm">AI Labs</span>
           </div>
-          <p className="text-gray-400 max-w-sm text-sm">Empowering enterprises with intelligent automation and cutting-edge artificial intelligence systems.</p>
+          <p className="text-gray-400 max-w-sm text-sm">Empowering local businesses and SMEs with intelligent automation and cutting-edge artificial intelligence systems.</p>
         </div>
         <div>
           <h4 className="text-white font-bold mb-4">Company</h4>

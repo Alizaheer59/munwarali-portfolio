@@ -10,13 +10,13 @@ export default function HeroSection() {
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center relative z-10">
         <motion.div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }}>
           <div className="inline-block px-4 py-1.5 rounded-full border border-[#3B82F6]/30 bg-[#3B82F6]/10 text-[#06B6D4] text-sm font-semibold mb-6">
-            Enterprise AI IT Services
+            Local & SMB AI IT Services
           </div>
           <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight mb-6">
             Transform Your Business with <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#3B82F6] via-[#06B6D4] to-[#8B5CF6]">Intelligent AI Solutions</span>
           </h1>
           <p className="text-lg text-gray-400 mb-10 max-w-xl leading-relaxed">
-            We design, build, and deploy custom AI systems, intelligent automation, AI agents, and enterprise software that help businesses save time, reduce operational costs, and improve productivity.
+            We design, build, and deploy custom AI systems, intelligent automation, AI agents, and tailored software that help businesses save time, reduce operational costs, and improve productivity.
           </p>
           <div className="flex flex-wrap gap-4">
             <a href="#contact" className="px-8 py-4 rounded-xl bg-gradient-to-r from-[#3B82F6] to-[#06B6D4] text-white font-bold hover:shadow-[0_0_30px_rgba(59,130,246,0.4)] transition-all flex items-center gap-2">

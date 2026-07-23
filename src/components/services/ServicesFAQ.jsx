@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 
 const faqs = [
-  { q: "How long does a typical AI implementation take?", a: "Depending on complexity, standard integrations take 2-4 weeks, while custom enterprise models can take 2-3 months from discovery to deployment." },
+  { q: "How long does a typical AI implementation take?", a: "Depending on complexity, standard integrations take 2-4 weeks, while custom business models can take 2-3 months from discovery to deployment." },
   { q: "Is our company data secure?", a: "Absolutely. We build private, siloed AI architectures. Your data is never used to train public models like ChatGPT." },
   { q: "Do we need an in-house tech team?", a: "No. We provide end-to-end development, deployment, and ongoing support, allowing your team to focus solely on business outcomes." }
 ];
