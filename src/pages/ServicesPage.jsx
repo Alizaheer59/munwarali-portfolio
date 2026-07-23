@@ -1,21 +1,40 @@
-import SEO from '../components/SEO';
+import { useEffect } from 'react';
+import ServicesNavbar from '../components/services/ServicesNavbar';
+import HeroSection from '../components/services/HeroSection';
+import AIServicesGrid from '../components/services/AIServicesGrid';
+import IndustriesGrid from '../components/services/IndustriesGrid';
+import ProcessTimeline from '../components/services/ProcessTimeline';
+import WhyChooseUs from '../components/services/WhyChooseUs';
+import FeaturedSolutions from '../components/services/FeaturedSolutions';
+import TechExpertise from '../components/services/TechExpertise';
+import CaseStudies from '../components/services/CaseStudies';
+import Testimonials from '../components/services/Testimonials';
+import ServicesFAQ from '../components/services/ServicesFAQ';
+import ContactForm from '../components/services/ContactForm';
+import FinalCTA from '../components/services/FinalCTA';
+import ServicesFooter from '../components/services/ServicesFooter';
 
 export default function ServicesPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <div className="pt-32 pb-24 max-w-7xl mx-auto px-6">
-      <SEO 
-        title="Services | AI Automation & Digital Marketing"
-        url={`https://munwarali.in/${'services'}`}
-      />
-      <div className="glass-card p-12 rounded-3xl relative overflow-hidden">
-        <div className="absolute -inset-0.5 bg-gradient-to-tr from-[#00d2ff] to-[#aa3bff] rounded-3xl opacity-20 blur-sm"></div>
-        <div className="relative z-10">
-          <h1 className="text-4xl md:text-6xl font-bold font-display mb-6"><span className="text-gradient">Services</span></h1>
-          <p className="text-xl text-gray-300">
-            Content coming soon. This section is being optimized for Generative Engine Optimization (GEO) and Answer Engine Optimization (AEO).
-          </p>
-        </div>
-      </div>
+    <div className="bg-[#0B1020] min-h-screen text-white selection:bg-[#3B82F6] selection:text-white font-sans">
+      <ServicesNavbar />
+      <HeroSection />
+      <AIServicesGrid />
+      <IndustriesGrid />
+      <ProcessTimeline />
+      <WhyChooseUs />
+      <FeaturedSolutions />
+      <TechExpertise />
+      <CaseStudies />
+      <Testimonials />
+      <ServicesFAQ />
+      <ContactForm />
+      <FinalCTA />
+      <ServicesFooter />
     </div>
   );
 }

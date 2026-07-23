@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import { Analytics } from '@vercel/analytics/react';
+import Preloader from './components/Preloader';
 import Navbar from './components/Navbar';
 import Background3D from './components/Background3D';
 import Footer from './components/Footer';
@@ -17,6 +18,7 @@ import ContactPage from './pages/ContactPage';
 function App() {
   return (
     <div className="min-h-screen text-white relative flex flex-col bg-transparent">
+      <Preloader />
       <Background3D />
       <Navbar />
       <main className="flex-grow">
