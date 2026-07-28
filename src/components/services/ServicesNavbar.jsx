@@ -10,7 +10,7 @@ export default function ServicesNavbar() {
           </div>
           <div className="font-display font-bold text-xl tracking-wide flex flex-col leading-none">
             <span className="text-gray-900">Munwar</span>
-            <span className="text-[#8B5CF6] text-sm">AI Agency</span>
+            <span className="text-[#8B5CF6] text-sm">AI Labs</span>
           </div>
         </Link>
         <div className="hidden md:flex gap-6 items-center">

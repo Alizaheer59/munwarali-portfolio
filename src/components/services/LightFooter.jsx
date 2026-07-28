@@ -5,7 +5,7 @@ export default function LightFooter() {
         <div className="col-span-2">
           <div className="font-display font-bold text-2xl text-white mb-4 flex flex-col leading-none">
             <span>Munwar</span>
-            <span className="text-[#8B5CF6] text-sm">AI Agency</span>
+            <span className="text-[#8B5CF6] text-sm">AI Labs</span>
           </div>
           <p className="text-gray-400 max-w-sm text-sm leading-relaxed">Helping local businesses, educational institutions, and organizations grow through intelligent digital marketing and custom automation.</p>
         </div>
@@ -26,7 +26,7 @@ export default function LightFooter() {
         </div>
       </div>
       <div className="max-w-7xl mx-auto px-6 text-center text-gray-500 text-sm">
-        &copy; {new Date().getFullYear()} Munwar AI Agency. All rights reserved.
+        &copy; {new Date().getFullYear()} Munwar AI Labs. All rights reserved.
       </div>
     </footer>
   );
