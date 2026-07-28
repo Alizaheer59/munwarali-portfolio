@@ -14,8 +14,8 @@ export default function LightHero() {
             <Sparkles size={16} /> Digital Marketing & AI Consulting
           </div>
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 leading-tight mb-8 font-display">
-            Accelerate Your Growth with <br className="hidden md:block" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#3B82F6] to-[#8B5CF6]">Intelligent Solutions</span>
+            Accelerate Your Online <br className="hidden md:block" />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#3B82F6] to-[#8B5CF6]">Visibility & Scale</span>
           </h1>
           <p className="text-xl text-gray-600 mb-10 max-w-3xl mx-auto leading-relaxed">
             We empower local businesses, educational institutions, and organizations with cutting-edge digital marketing, automated workflows, and custom AI technologies.
