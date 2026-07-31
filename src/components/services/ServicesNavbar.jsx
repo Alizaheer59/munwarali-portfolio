@@ -15,7 +15,7 @@ export default function ServicesNavbar() {
         </Link>
         <div className="hidden md:flex gap-6 items-center">
           <Link to="/" className="text-gray-500 hover:text-[#3B82F6] transition-colors text-sm font-medium">Back to Portfolio</Link>
-          <a href="#contact" className="px-5 py-2 rounded-lg bg-gradient-to-r from-[#3B82F6] to-[#8B5CF6] hover:opacity-90 text-white text-sm font-semibold transition-all shadow-md">Get Started</a>
+          <a onClick={(e) => { e.preventDefault(); window.dispatchEvent(new Event('open-services-popup')); }} href="#" className="px-5 py-2 rounded-lg bg-gradient-to-r from-[#3B82F6] to-[#8B5CF6] hover:opacity-90 text-white text-sm font-semibold transition-all shadow-md">Get Started</a>
         </div>
       </div>
     </nav>

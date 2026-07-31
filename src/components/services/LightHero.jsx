@@ -21,7 +21,7 @@ export default function LightHero() {
             We empower local businesses, educational institutions, and organizations with cutting-edge digital marketing, automated workflows, and custom AI technologies.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="#contact" className="px-8 py-4 rounded-xl bg-gradient-to-r from-[#3B82F6] to-[#8B5CF6] text-white font-bold hover:shadow-[0_10_30px_rgba(59,130,246,0.3)] hover:-translate-y-1 transition-all flex items-center gap-2 text-lg">
+            <a onClick={(e) => { e.preventDefault(); window.dispatchEvent(new Event('open-services-popup')); }} href="#" className="px-8 py-4 rounded-xl bg-gradient-to-r from-[#3B82F6] to-[#8B5CF6] text-white font-bold hover:shadow-[0_10_30px_rgba(59,130,246,0.3)] hover:-translate-y-1 transition-all flex items-center gap-2 text-lg">
               Book a Free Consultation <ArrowRight size={20} />
             </a>
           </div>
