@@ -157,23 +157,23 @@ export default function Contact() {
                   >
                     <div className="grid grid-cols-2 gap-4">
                       <div>
-                        <label className="block text-sm font-medium text-gray-400 mb-1">Name *</label>
-                        <input required type="text" name="name" value={formData.name} onChange={handleChange} className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#00d2ff] transition-colors" placeholder="John Doe" />
+                        <label htmlFor="contact-name" className="block text-sm font-medium text-gray-400 mb-1">Name *</label>
+                        <input id="contact-name" required type="text" name="name" value={formData.name} onChange={handleChange} className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#00d2ff] transition-colors" placeholder="John Doe" />
                       </div>
                       <div>
-                        <label className="block text-sm font-medium text-gray-400 mb-1">Phone *</label>
-                        <input required type="tel" name="phone" value={formData.phone} onChange={handleChange} className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#aa3bff] transition-colors" placeholder="+91 9876543210" />
+                        <label htmlFor="contact-phone" className="block text-sm font-medium text-gray-400 mb-1">Phone *</label>
+                        <input id="contact-phone" required type="tel" name="phone" value={formData.phone} onChange={handleChange} className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#aa3bff] transition-colors" placeholder="+91 9876543210" />
                       </div>
                     </div>
                     
                     <div>
-                      <label className="block text-sm font-medium text-gray-400 mb-1">Email *</label>
-                      <input required type="email" name="email" value={formData.email} onChange={handleChange} className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#00d2ff] transition-colors" placeholder="john@example.com" />
+                      <label htmlFor="contact-email" className="block text-sm font-medium text-gray-400 mb-1">Email *</label>
+                      <input id="contact-email" required type="email" name="email" value={formData.email} onChange={handleChange} className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#00d2ff] transition-colors" placeholder="john@example.com" />
                     </div>
 
                     <div>
-                      <label className="block text-sm font-medium text-gray-400 mb-1">Service Required *</label>
-                      <select required name="service" value={formData.service} onChange={handleChange} className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#aa3bff] transition-colors appearance-none">
+                      <label htmlFor="contact-service" className="block text-sm font-medium text-gray-400 mb-1">Service Required *</label>
+                      <select id="contact-service" required name="service" value={formData.service} onChange={handleChange} className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#aa3bff] transition-colors appearance-none">
                         {services.map(service => (
                           <option key={service} value={service} className="bg-[#050505] text-white">{service}</option>
                         ))}
@@ -181,8 +181,8 @@ export default function Contact() {
                     </div>
 
                     <div>
-                      <label className="block text-sm font-medium text-gray-400 mb-1">Message *</label>
-                      <textarea required rows="4" name="message" value={formData.message} onChange={handleChange} className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#00d2ff] transition-colors resize-none" placeholder="Tell me about your project..."></textarea>
+                      <label htmlFor="contact-message" className="block text-sm font-medium text-gray-400 mb-1">Message *</label>
+                      <textarea id="contact-message" required rows="4" name="message" value={formData.message} onChange={handleChange} className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#00d2ff] transition-colors resize-none" placeholder="Tell me about your project..."></textarea>
                     </div>
 
                     {status === 'error' && (

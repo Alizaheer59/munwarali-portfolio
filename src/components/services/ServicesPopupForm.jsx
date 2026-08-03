@@ -64,8 +64,9 @@ export default function ServicesPopupForm() {
             <div className="p-6 md:p-8">
               <form action="https://formspree.io/f/xlgqkwjw" method="POST" className="space-y-4">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                  <label htmlFor="popup-name" className="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
                   <input 
+                    id="popup-name"
                     type="text" 
                     name="name" 
                     required 
@@ -74,8 +75,9 @@ export default function ServicesPopupForm() {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Mobile Number</label>
+                  <label htmlFor="popup-mobile" className="block text-sm font-medium text-gray-700 mb-1">Mobile Number</label>
                   <input 
+                    id="popup-mobile"
                     type="tel" 
                     name="mobile" 
                     required 
@@ -84,8 +86,9 @@ export default function ServicesPopupForm() {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                  <label htmlFor="popup-email" className="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
                   <input 
+                    id="popup-email"
                     type="email" 
                     name="email" 
                     required 
@@ -94,8 +97,9 @@ export default function ServicesPopupForm() {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">What do you need help with?</label>
+                  <label htmlFor="popup-service" className="block text-sm font-medium text-gray-700 mb-1">What do you need help with?</label>
                   <select 
+                    id="popup-service"
                     name="service" 
                     className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-gray-900 focus:border-[#3B82F6] focus:ring-2 focus:ring-blue-100 focus:outline-none transition-all"
                   >
