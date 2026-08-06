@@ -5,6 +5,7 @@ import ClientScroller from '../components/services/ClientScroller';
 import ServiceCategories from '../components/services/ServiceCategories';
 import LightFooter from '../components/services/LightFooter';
 import ServicesPopupForm from '../components/services/ServicesPopupForm';
+import BrevoNewsletter from '../components/services/BrevoNewsletter';
 
 export default function ServicesPage() {
   useEffect(() => {
@@ -36,6 +37,7 @@ export default function ServicesPage() {
       <LightHero />
       <ClientScroller />
       <ServiceCategories />
+      <BrevoNewsletter />
       <LightFooter />
       <ServicesPopupForm />
     </div>
