@@ -10,6 +10,7 @@ import FloatingWidgets from './components/FloatingWidgets';
 import Home from './pages/Home';
 import AboutPage from './pages/AboutPage';
 import ServicesPage from './pages/ServicesPage';
+import Chatbot from './components/Chatbot';
 import PortfolioPage from './pages/PortfolioPage';
 import BlogIndex from './pages/BlogIndex';
 import BlogPost from './pages/BlogPost';
