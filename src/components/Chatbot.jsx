@@ -43,7 +43,7 @@ export default function Chatbot() {
       if (data.response) {
         setMessages(prev => [...prev, { role: 'model', text: data.response }]);
       } else {
-        setMessages(prev => [...prev, { role: 'model', text: "Sorry, I'm having trouble connecting right now." }]);
+        setMessages(prev => [...prev, { role: 'model', text: data.error ? `Error: ${data.error} (${data.type})` : "Sorry, I'm having trouble connecting right now." }]);
       }
     } catch (error) {
       setMessages(prev => [...prev, { role: 'model', text: "Sorry, I couldn't reach the server. Please try again." }]);
