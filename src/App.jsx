@@ -35,6 +35,7 @@ function App() {
       </main>
       <Footer />
       <FloatingWidgets />
+      <Chatbot />
       <Analytics />
     </div>
   );
