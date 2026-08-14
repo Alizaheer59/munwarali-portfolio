@@ -120,7 +120,7 @@ If a prospect is interested: Offer a discovery call, Understand their goals, Rec
 # Initialize model
 try:
     model = genai.GenerativeModel(
-        model_name='gemini-1.5-flash',
+        model_name='gemini-1.5-flash-latest',
         system_instruction=SYSTEM_INSTRUCTION
     )
 except Exception as e:
