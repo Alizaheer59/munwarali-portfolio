@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import Preloader from './components/Preloader';
 import Navbar from './components/Navbar';
 import Background3D from './components/Background3D';
@@ -36,6 +37,7 @@ function App() {
       <Footer />
       <FloatingWidgets />
       <Analytics />
+      <SpeedInsights />
     </div>
   );
 }
