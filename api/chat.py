@@ -118,13 +118,29 @@ If a prospect is interested: Offer a discovery call, Understand their goals, Rec
 """
 
 # Initialize model
+model = None
+init_error = None
 try:
+    available_models = []
+    models = genai.list_models()
+    available_models = [m.name for m in models if 'generateContent' in m.supported_generation_methods]
+    
+    model_name = 'gemini-1.5-flash'
+    if 'models/gemini-1.5-flash' in available_models:
+        model_name = 'gemini-1.5-flash'
+    elif 'models/gemini-1.5-flash-latest' in available_models:
+        model_name = 'gemini-1.5-flash-latest'
+    elif 'models/gemini-1.5-pro' in available_models:
+        model_name = 'gemini-1.5-pro'
+    elif available_models:
+        model_name = available_models[0].replace('models/', '')
+
     model = genai.GenerativeModel(
-        model_name='gemini-1.5-flash-latest',
+        model_name=model_name,
         system_instruction=SYSTEM_INSTRUCTION
     )
 except Exception as e:
-    model = None
+    init_error = str(e)
 
 class handler(BaseHTTPRequestHandler):
     def do_OPTIONS(self):
@@ -148,6 +164,9 @@ class handler(BaseHTTPRequestHandler):
                 role = 'user' if msg['role'] == 'user' else 'model'
                 formatted_history.append({'role': role, 'parts': [msg['text']]})
                 
+            if model is None:
+                raise Exception(f"Failed to initialize model. Init error: {init_error}")
+                
             chat = model.start_chat(history=formatted_history)
             response = chat.send_message(message)
             
@@ -158,9 +177,13 @@ class handler(BaseHTTPRequestHandler):
             
             self.wfile.write(json.dumps({'response': response.text}).encode('utf-8'))
         except Exception as e:
+            models_info = 'Unknown'
+            if 'available_models' in globals() or 'available_models' in locals():
+                models_info = ", ".join(available_models)
+                
             self.send_response(500)
             self.send_header('Content-type', 'application/json')
             self.send_header('Access-Control-Allow-Origin', '*')
             self.end_headers()
-            self.wfile.write(json.dumps({'error': str(e), 'type': str(type(e))}).encode('utf-8'))
+            self.wfile.write(json.dumps({'error': str(e), 'type': str(type(e)), 'models': models_info}).encode('utf-8'))
         return
