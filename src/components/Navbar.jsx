@@ -15,17 +15,9 @@ export default function Navbar() {
   }, []);
 
       const navLinks = [
+    { name: 'Home', href: '/' },
     { name: 'Services', href: '/services' },
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'AI Stack', href: '#toolkit' },
-    { name: 'Experience', href: '#experience' },
-    { name: 'Gallery', href: '#gallery' },
-    { name: 'Certifications', href: '#certifications' },
-    { name: 'Store', href: 'https://alizaheermohammed.gumroad.com/' },
-    { name: 'Blog', href: '/blog' },
-    { name: 'Contact', href: '#contact' }
+    { name: 'Projects', href: '/portfolio' }
   ];
 
   return (
