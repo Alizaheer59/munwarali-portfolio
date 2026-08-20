@@ -1,7 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 
 export default function SEO({ title, description, url, type = "website", schema }) {
-  const siteName = "Mohammed Munwar Ali Zaheer | Digital Marketing & Generative AI Professional";
+  const siteName = "Mohammed Munwar Ali Zaheer | AI-first digital marketing professional";
   const defaultDesc = "Digital Marketing, SEO, GEO, AEO, AI Automation and Content Strategy Professional helping brands grow through AI-powered marketing systems.";
   const canonical = url || "https://munwarali.in";
 

@@ -31,7 +31,7 @@ export default function About() {
             <div className="relative z-10 text-center">
               <h3 className="text-2xl font-semibold mb-6 text-[#00d2ff]">Creative & Results-Oriented</h3>
               <p className="text-gray-300 leading-relaxed mb-6 text-lg">
-                Digital Marketing & Generative AI Professional passionate about building AI-powered digital experiences. Specialized in combining creativity, marketing, automation, and artificial intelligence to develop engaging content, optimize digital visibility, and create innovative growth-driven solutions.
+                AI-first digital marketing professional passionate about building AI-powered digital experiences. Specialized in combining creativity, marketing, automation, and artificial intelligence to develop engaging content, optimize digital visibility, and create innovative growth-driven solutions.
               </p>
               <p className="text-gray-300 leading-relaxed mb-6 text-lg">
                 Expertise includes Digital Marketing, SEO & Content Optimization, Social Media Marketing, AI Prompt Engineering, AI Agents & Automation, AI-assisted Content Creation, Branding, Website Management, Copywriting, AI Video Editing, and AI Workflow Systems. Skilled in leveraging modern AI tools and creative technologies to streamline workflows, enhance audience engagement, and build intelligent digital ecosystems.

@@ -16,7 +16,7 @@ export default function Home() {
     "@type": "Person",
     "name": "Mohammed Munwar Ali Zaheer",
     "url": "https://munwarali.in",
-    "jobTitle": "Digital Marketing & Generative AI Professional",
+    "jobTitle": "AI-first digital marketing professional",
     "description": "Blending AI, Creativity, Automation & Modern Digital Strategy",
     "address": {
       "@type": "PostalAddress",

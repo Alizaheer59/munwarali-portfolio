@@ -25,7 +25,7 @@ export default function Hero() {
           </h1>
           
           <h2 className="text-xl lg:text-2xl text-gray-300 font-light">
-            Digital Marketing & Generative AI Professional
+            AI-first digital marketing professional
           </h2>
           
 
