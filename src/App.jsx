@@ -11,7 +11,7 @@ import Home from './pages/Home';
 import AboutPage from './pages/AboutPage';
 import ServicesPage from './pages/ServicesPage';
 import Chatbot from './components/Chatbot';
-import PortfolioPage from './pages/PortfolioPage';
+import PortfolioPage from './pages/PortfolioPage';\nimport ProjectPost from './pages/ProjectPost';
 import BlogIndex from './pages/BlogIndex';
 import BlogPost from './pages/BlogPost';
 import ContactPage from './pages/ContactPage';
@@ -27,7 +27,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/services" element={<ServicesPage />} />
-          <Route path="/portfolio" element={<PortfolioPage />} />
+          <Route path="/portfolio" element={<PortfolioPage />} />\n          <Route path="/portfolio/:slug" element={<ProjectPost />} />
           <Route path="/blog" element={<BlogIndex />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/contact" element={<ContactPage />} />
