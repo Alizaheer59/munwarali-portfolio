@@ -5,12 +5,12 @@ export default function Skills() {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
 
   const skillsList = [
-    { name: "Digital Marketing", level: 90 },
-    { name: "Social Media Marketing", level: 85 },
-    { name: "SEO & Content Optimization", level: 92 },
-    { name: "AI Prompt Engineering", level: 95 },
-    { name: "AI Agents & Automation", level: 88 },
-    { name: "AI Video Editing", level: 82 }
+    { name: "Prompt Engineering", level: 98 },
+    { name: "Generative AI Systems", level: 95 },
+    { name: "LLM APIs & Integration", level: 90 },
+    { name: "AI Agents & Automation", level: 95 },
+    { name: "AI Workflow Optimization", level: 92 },
+    { name: "AI-Driven Marketing", level: 90 }
   ];
 
   return (
