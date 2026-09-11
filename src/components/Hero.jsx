@@ -2,7 +2,6 @@ import { motion } from 'framer-motion';
 import { Download, Mail, MessageCircle, ArrowRight } from 'lucide-react';
 
 export default function Hero() {
-  const keywords = ["AI Automation", "Digital Marketing", "SEO", "GEO", "AEO", "AI Prompt Engineering", "AI Agents", "Content Strategy"];
   
   return (
     <section id="home" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
@@ -27,26 +26,6 @@ export default function Hero() {
           <h2 className="text-xl lg:text-2xl text-gray-300 font-light">
             Prompt Engineering & Generative AI Professional
           </h2>
-          
-
-          {/* Animated keywords */}
-          <div className="h-8 overflow-hidden relative border-l-2 border-[#aa3bff] pl-4">
-            <motion.div 
-              animate={{ y: [0, -32 * (keywords.length - 1)] }}
-              transition={{ repeat: Infinity, duration: keywords.length * 2, ease: "linear" }}
-              className="flex flex-col"
-            >
-              {keywords.map((kw, i) => (
-                <span key={i} className="h-8 flex items-center text-[#00d2ff] font-mono font-medium">
-                  {kw}
-                </span>
-              ))}
-              {/* Duplicate first element for seamless loop */}
-              <span className="h-8 flex items-center text-[#00d2ff] font-mono font-medium">
-                {keywords[0]}
-              </span>
-            </motion.div>
-          </div>
 
           <div className="flex flex-wrap gap-4 mt-4">
             <a href="#contact" className="px-6 py-3 rounded-xl bg-white text-black font-semibold flex items-center gap-2 hover:scale-105 transition-transform">
