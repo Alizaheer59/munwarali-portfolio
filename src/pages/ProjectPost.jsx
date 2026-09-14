@@ -5,6 +5,13 @@ import { portfolioProjects } from '../data/portfolioData';
 
 function renderContent(markdown) {
   const lines = markdown.trim().split('\n');
+  
+  const renderInline = (text) => {
+    let html = text.replace(/\*\*(.*?)\*\*/g, '<strong class="text-white font-semibold">$1</strong>');
+    html = html.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-[#00d2ff] hover:underline">$1</a>');
+    return <span dangerouslySetInnerHTML={{ __html: html }} />;
+  };
+
   return lines.map((line, idx) => {
     if (line.startsWith('### ')) {
       return <h3 key={idx} className="text-2xl font-bold text-white mt-8 mb-4">{line.replace('### ', '')}</h3>;
@@ -13,15 +20,7 @@ function renderContent(markdown) {
     } else if (line.trim() === '') {
       return null;
     } else {
-      const parts = line.split('**');
-      if (parts.length > 1) {
-        return (
-          <p key={idx} className="text-gray-300 leading-relaxed mb-6 text-lg">
-            {parts.map((part, i) => i % 2 === 1 ? <strong key={i} className="text-white font-semibold">{part}</strong> : part)}
-          </p>
-        );
-      }
-      return <p key={idx} className="text-gray-300 leading-relaxed mb-6 text-lg">{line}</p>;
+      return <p key={idx} className="text-gray-300 leading-relaxed mb-6 text-lg">{renderInline(line)}</p>;
     }
   });
 }
