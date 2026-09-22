@@ -24,7 +24,7 @@ export default function Hero() {
           </h1>
           
           <h2 className="text-xl lg:text-2xl text-gray-300 font-light">
-            Prompt Engineering & Generative AI Professional
+            Digital Marketing Professional | Media Content Specialist
           </h2>
 
           <div className="flex flex-wrap gap-4 mt-4">

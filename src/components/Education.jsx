@@ -7,26 +7,26 @@ export default function Education() {
   const eduData = [
     {
       institution: "Andhra University",
-      degree: "MCA (Online)",
-      duration: "2024–2026",
-      details: "Master of Computer Applications focused on advanced computing."
+      degree: "MCA",
+      duration: "2024–26",
+      details: "CGPA: 8.5"
     },
     {
       institution: "Aditya Degree College",
-      degree: "BSc Computer Science",
-      duration: "2019–2022",
+      degree: "BSc CS",
+      duration: "2019–22",
       details: "CGPA: 7.58"
     },
     {
       institution: "Sri Prakash Junior College",
       degree: "Intermediate",
-      duration: "2017–2019",
+      duration: "2017–19",
       details: "CGPA: 8.56"
     },
     {
       institution: "Sri Prakash Vidya Niketan",
       degree: "SSC",
-      duration: "2016–2017",
+      duration: "2016–17",
       details: "CGPA: 10.0"
     }
   ];

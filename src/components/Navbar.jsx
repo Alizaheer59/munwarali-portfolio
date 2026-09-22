@@ -44,7 +44,7 @@ export default function Navbar() {
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#00d2ff] to-[#aa3bff] transition-all duration-300 group-hover:w-full"></span>
             </a>
           ))}
-          <a href="/Mohammed_Munwar_Ali_Zaheer_Resume.png" download="Mohammed_Munwar_Ali_Zaheer_Resume.png" className="ml-4 px-5 py-2 rounded-xl bg-gradient-to-r from-[#00d2ff] to-[#aa3bff] text-white font-semibold text-sm hover:opacity-90 transition-opacity shadow-[0_0_15px_rgba(0,210,255,0.3)] flex items-center gap-2">
+          <a href="/Mohammed_Munwar_Ali_Zaheer_Resume.jpg" download="Mohammed_Munwar_Ali_Zaheer_Resume.jpg" className="ml-4 px-5 py-2 rounded-xl bg-gradient-to-r from-[#00d2ff] to-[#aa3bff] text-white font-semibold text-sm hover:opacity-90 transition-opacity shadow-[0_0_15px_rgba(0,210,255,0.3)] flex items-center gap-2">
             Download Resume
           </a>
         </div>
@@ -79,7 +79,7 @@ export default function Navbar() {
                     </motion.a>
         ))}
         <motion.a
-          href="/Mohammed_Munwar_Ali_Zaheer_Resume.png" download="Mohammed_Munwar_Ali_Zaheer_Resume.png"
+          href="/Mohammed_Munwar_Ali_Zaheer_Resume.jpg" download="Mohammed_Munwar_Ali_Zaheer_Resume.jpg"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: isMobileMenuOpen ? 1 : 0, y: isMobileMenuOpen ? 0 : 20 }}
           transition={{ delay: navLinks.length * 0.05 }}

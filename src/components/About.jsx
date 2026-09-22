@@ -29,15 +29,15 @@ export default function About() {
           >
             <div className="absolute -inset-0.5 bg-gradient-to-tr from-[#00d2ff] to-[#aa3bff] rounded-3xl opacity-20 blur-sm"></div>
             <div className="relative z-10 text-center">
-              <h3 className="text-2xl font-semibold mb-6 text-[#00d2ff]">Creative & Results-Oriented</h3>
+              <h3 className="text-2xl font-semibold mb-6 text-[#00d2ff]">Digital Marketing & Content Specialist</h3>
               <p className="text-gray-300 leading-relaxed mb-6 text-lg">
-                Prompt Engineering & Generative AI Professional passionate about building AI-powered digital experiences. Specialized in combining creativity, marketing, automation, and artificial intelligence to develop engaging content, optimize digital visibility, and create innovative growth-driven solutions.
+                Digital Marketing professional with experience supporting digital campaigns, website management, content marketing, social media, branding, and AI-powered content creation.
               </p>
               <p className="text-gray-300 leading-relaxed mb-6 text-lg">
-                Expertise includes Digital Marketing, SEO & Content Optimization, Social Media Marketing, AI Prompt Engineering, AI Agents & Automation, AI-assisted Content Creation, Branding, Website Management, Copywriting, AI Video Editing, and AI Workflow Systems. Skilled in leveraging modern AI tools and creative technologies to streamline workflows, enhance audience engagement, and build intelligent digital ecosystems.
+                Skilled at developing marketing assets, optimizing digital presence, collaborating with cross-functional teams, and translating technical concepts into customer-focused messaging. Familiar with SEO, audience engagement, campaign optimization, analytics, and AI-assisted marketing workflows.
               </p>
               <p className="text-gray-300 leading-relaxed text-lg">
-                Driven by innovation, creativity, and continuous learning, with a strong interest in the future of AI-powered marketing, automation, content systems, and next-generation digital experiences.
+                Strong written and spoken English with a passion for technology, software, and data-informed digital marketing.
               </p>
             </div>
           </motion.div>

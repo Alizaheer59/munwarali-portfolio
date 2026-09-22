@@ -6,24 +6,26 @@ export default function Experience() {
 
   const experiences = [
     {
-      company: "Skill Development Institute, Visakhapatnam",
-      role: "Digital Marketing Associate",
-      duration: "2024–2025",
+      company: "Transformix Global LLP",
+      role: "AI Content & Digital Marketing Specialist",
+      duration: "Jan 2026 – March 2026",
       points: [
-        "Created marketing creatives and promotional materials",
-        "Managed institutional branding and website management",
-        "Improved online visibility and social media engagement",
-        "Assisted CEO as a Corporate Co-trainer"
+        "Designed and launched the company website and digital presence.",
+        "Managed Google Workspace, employee onboarding, and IT infrastructure.",
+        "Led digital marketing and go-to-market (GTM) initiatives.",
+        "Implemented AI tools and process automation to improve operations."
       ]
     },
     {
-      company: "Transformix Global LLP",
-      role: "AI Generalist",
-      duration: "Jan 2026 – March 2026",
+      company: "HPCL - Skill Development Institute, Visakhapatnam",
+      role: "Digital Marketing Executive",
+      duration: "Jan 2024 – Dec 2025",
       points: [
-        "Leveraged AI systems for optimized workflows",
-        "Assisted in content systems and automation processes",
-        "Explored and implemented cutting-edge AI tools"
+        "Created marketing creatives for digital campaigns and branding.",
+        "Managed website content and improved online visibility.",
+        "Supported social media marketing and audience engagement.",
+        "Used AI tools for content creation and marketing workflows.",
+        "Collaborated with cross-functional teams on marketing projects."
       ]
     }
   ];
