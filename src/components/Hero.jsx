@@ -54,15 +54,7 @@ export default function Hero() {
              
              {/* Image container */}
              <div className="absolute inset-0 glass-card rounded-3xl border-2 border-white/10 hover:border-[#00d2ff]/50 overflow-hidden transition-colors duration-500 flex items-center justify-center bg-black/40">
-               <img 
-                 src="/profile2.png" 
-                 alt="Mohammed Munwar Ali Zaheer" 
-                 className="w-full h-full object-cover rounded-3xl hover:scale-110 transition-transform duration-700"
-                 onError={(e) => {
-                   e.target.onerror = null;
-                   e.target.src = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=500"; // Fallback professional placeholder
-                 }}
-               />
+               
                
                {/* Overlay gradient for futuristic depth */}
                <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-transparent opacity-60 pointer-events-none"></div>
