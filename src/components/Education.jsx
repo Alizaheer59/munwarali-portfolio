@@ -42,7 +42,7 @@ export default function Education() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-bold font-display mb-4">Academic <span className="text-gradient">Journey</span></h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-[#00d2ff] to-[#aa3bff] mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-[#FF3366] to-[#7C3AED] mx-auto rounded-full"></div>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -54,15 +54,15 @@ export default function Education() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="glass-card p-6 rounded-2xl relative group overflow-hidden"
             >
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#aa3bff]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#7C3AED]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               
-              <div className="text-[#00d2ff] font-mono text-sm mb-2">{item.duration}</div>
+              <div className="text-[#FF3366] font-mono text-sm mb-2">{item.duration}</div>
               <h3 className="text-xl font-bold text-white mb-1">{item.degree}</h3>
-              <h4 className="text-md text-[#aa3bff] font-medium mb-4">{item.institution}</h4>
+              <h4 className="text-md text-[#7C3AED] font-medium mb-4">{item.institution}</h4>
               <p className="text-gray-400 text-sm">{item.details}</p>
               
               {/* Decorative line */}
-              <div className="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-[#00d2ff] to-[#aa3bff] w-0 group-hover:w-full transition-all duration-500"></div>
+              <div className="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-[#FF3366] to-[#7C3AED] w-0 group-hover:w-full transition-all duration-500"></div>
             </motion.div>
           ))}
         </div>

@@ -22,7 +22,7 @@ export default function Preloader() {
           className="fixed inset-0 z-[9999] bg-[#050505] flex flex-col items-center justify-center overflow-hidden"
         >
           {/* Background Glow */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-tr from-[#00d2ff]/20 to-[#aa3bff]/20 blur-[100px] rounded-full"></div>
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-tr from-[#FF3366]/20 to-[#7C3AED]/20 blur-[100px] rounded-full"></div>
 
           <div className="relative z-10 flex items-center justify-center">
             {/* Animated Logo Container */}
@@ -30,12 +30,12 @@ export default function Preloader() {
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.5 }}
-              className="w-24 h-24 rounded-3xl bg-gradient-to-tr from-[#00d2ff] to-[#aa3bff] p-[2px] shadow-[0_0_40px_rgba(170,59,255,0.4)]"
+              className="w-24 h-24 rounded-3xl bg-gradient-to-tr from-[#FF3366] to-[#7C3AED] p-[2px] shadow-[0_0_40px_rgba(170,59,255,0.4)]"
             >
               <div className="w-full h-full bg-[#050505] rounded-3xl flex items-center justify-center overflow-hidden relative group">
-                <div className="absolute inset-0 bg-gradient-to-tr from-[#00d2ff]/10 to-[#aa3bff]/10"></div>
+                <div className="absolute inset-0 bg-gradient-to-tr from-[#FF3366]/10 to-[#7C3AED]/10"></div>
                 
-                <div className="font-display font-black text-4xl text-transparent bg-clip-text bg-gradient-to-tr from-[#00d2ff] to-[#aa3bff] flex items-center gap-1 relative z-10 tracking-widest">
+                <div className="font-display font-black text-4xl text-transparent bg-clip-text bg-gradient-to-tr from-[#FF3366] to-[#7C3AED] flex items-center gap-1 relative z-10 tracking-widest">
                   <motion.span
                     initial={{ y: 20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
@@ -70,7 +70,7 @@ export default function Preloader() {
               initial={{ x: "-100%" }}
               animate={{ x: "100%" }}
               transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-[#00d2ff] to-transparent"
+              className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-[#FF3366] to-transparent"
             ></motion.div>
           </div>
         </motion.div>

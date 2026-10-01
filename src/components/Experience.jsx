@@ -41,7 +41,7 @@ export default function Experience() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-bold font-display mb-4">Professional <span className="text-gradient">Experience</span></h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-[#00d2ff] to-[#aa3bff] mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-[#FF3366] to-[#7C3AED] mx-auto rounded-full"></div>
         </motion.div>
 
         <div className="relative border-l-2 border-[#3a7bd5]/30 ml-4 md:ml-0">
@@ -54,19 +54,19 @@ export default function Experience() {
               className="mb-12 ml-8 relative"
             >
               {/* Timeline Dot */}
-              <div className="absolute -left-[41px] top-1 w-6 h-6 bg-[#050505] border-2 border-[#00d2ff] rounded-full flex items-center justify-center shadow-[0_0_10px_rgba(0,210,255,0.6)]">
-                <div className="w-2 h-2 bg-[#aa3bff] rounded-full"></div>
+              <div className="absolute -left-[41px] top-1 w-6 h-6 bg-[#050505] border-2 border-[#FF3366] rounded-full flex items-center justify-center shadow-[0_0_10px_rgba(0,210,255,0.6)]">
+                <div className="w-2 h-2 bg-[#7C3AED] rounded-full"></div>
               </div>
 
               <div className="glass-card p-8 rounded-2xl hover:-translate-y-1 transition-transform duration-300">
-                <span className="text-sm font-mono text-[#aa3bff] bg-[#aa3bff]/10 px-3 py-1 rounded-full">{exp.duration}</span>
+                <span className="text-sm font-mono text-[#7C3AED] bg-[#7C3AED]/10 px-3 py-1 rounded-full">{exp.duration}</span>
                 <h3 className="text-2xl font-bold text-white mt-4 mb-1">{exp.role}</h3>
-                <h4 className="text-lg text-[#00d2ff] mb-4">{exp.company}</h4>
+                <h4 className="text-lg text-[#FF3366] mb-4">{exp.company}</h4>
                 
                 <ul className="space-y-2">
                   {exp.points.map((point, i) => (
                     <li key={i} className="text-gray-300 flex items-start gap-2 text-sm md:text-base">
-                      <span className="text-[#00d2ff] mt-1">▹</span> {point}
+                      <span className="text-[#FF3366] mt-1">▹</span> {point}
                     </li>
                   ))}
                 </ul>

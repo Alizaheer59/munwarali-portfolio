@@ -10,7 +10,7 @@ function renderContent(markdown) {
     if (line.startsWith('### ')) {
       return <h3 key={idx} className="text-2xl font-bold text-white mt-8 mb-4">{line.replace('### ', '')}</h3>;
     } else if (line.startsWith('## ')) {
-      return <h2 key={idx} className="text-3xl font-bold text-[#00d2ff] mt-10 mb-6">{line.replace('## ', '')}</h2>;
+      return <h2 key={idx} className="text-3xl font-bold text-[#FF3366] mt-10 mb-6">{line.replace('## ', '')}</h2>;
     } else if (line.startsWith('1. ') || line.startsWith('2. ') || line.startsWith('3. ') || line.startsWith('4. ')) {
       return <li key={idx} className="ml-6 mb-2 text-gray-300 leading-relaxed"><strong className="text-white">{line.split('**')[1] || ''}</strong>{line.split('**')[2] || line.substring(3)}</li>;
     } else if (line.trim() === '') {
@@ -60,12 +60,12 @@ export default function BlogPost() {
         schema={articleSchema}
       />
       
-      <Link to="/blog" className="inline-flex items-center gap-2 text-[#00d2ff] hover:text-[#aa3bff] transition-colors mb-8">
+      <Link to="/blog" className="inline-flex items-center gap-2 text-[#FF3366] hover:text-[#7C3AED] transition-colors mb-8">
         <ArrowLeft size={20} /> Back to Blog
       </Link>
 
       <header className="mb-12">
-        <div className="text-[#aa3bff] font-semibold mb-4 tracking-wider uppercase text-sm">{post.category}</div>
+        <div className="text-[#7C3AED] font-semibold mb-4 tracking-wider uppercase text-sm">{post.category}</div>
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display mb-6 leading-tight">{post.title}</h1>
         <div className="flex items-center gap-4 text-gray-400">
           <span>By <strong className="text-white">{post.author}</strong></span>

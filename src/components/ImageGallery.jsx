@@ -14,7 +14,7 @@ export default function ImageGallery() {
 
   return (
     <section id="gallery" className="py-24 relative overflow-hidden">
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-64 bg-gradient-to-r from-[#00d2ff]/10 to-[#aa3bff]/10 blur-[100px] pointer-events-none -z-10"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-64 bg-gradient-to-r from-[#FF3366]/10 to-[#7C3AED]/10 blur-[100px] pointer-events-none -z-10"></div>
       <div className="max-w-7xl mx-auto px-6 mb-12">
         <motion.div
           ref={ref}
@@ -26,7 +26,7 @@ export default function ImageGallery() {
           <h2 className="text-3xl md:text-5xl font-bold font-display mb-4">
             Workshops & <span className="text-gradient">Certifications</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-[#00d2ff] to-[#aa3bff] mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-[#FF3366] to-[#7C3AED] mx-auto rounded-full"></div>
         </motion.div>
       </div>
 

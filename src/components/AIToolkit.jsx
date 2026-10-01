@@ -25,11 +25,11 @@ const CategoryCard = ({ title, icon: Icon, tools, description, delay }) => {
       style={{ transformStyle: "preserve-3d", perspective: "1000px" }}
       whileHover={{ scale: 1.02, rotateX: 2, rotateY: -2 }}
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-[#00d2ff]/5 to-[#aa3bff]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-[#FF3366]/5 to-[#7C3AED]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
       
       <div className="relative z-10">
         <div className="flex items-center gap-4 mb-6">
-          <div className="w-12 h-12 rounded-xl bg-gradient-to-tr from-[#00d2ff]/20 to-[#aa3bff]/20 flex items-center justify-center text-[#00d2ff] group-hover:scale-110 transition-transform duration-300">
+          <div className="w-12 h-12 rounded-xl bg-gradient-to-tr from-[#FF3366]/20 to-[#7C3AED]/20 flex items-center justify-center text-[#FF3366] group-hover:scale-110 transition-transform duration-300">
             <Icon size={24} />
           </div>
           <h3 className="text-2xl font-bold text-white group-hover:text-gradient transition-colors duration-300">{title}</h3>
@@ -39,7 +39,7 @@ const CategoryCard = ({ title, icon: Icon, tools, description, delay }) => {
           {tools.map((tool, idx) => (
             <span 
               key={idx} 
-              className="px-3 py-1 text-sm font-medium bg-white/5 border border-white/10 rounded-full text-gray-300 hover:bg-white/10 hover:border-[#00d2ff]/50 transition-all"
+              className="px-3 py-1 text-sm font-medium bg-white/5 border border-white/10 rounded-full text-gray-300 hover:bg-white/10 hover:border-[#FF3366]/50 transition-all"
             >
               {tool}
             </span>
@@ -105,8 +105,8 @@ export default function AIToolkit() {
   return (
     <section id="toolkit" className="py-24 relative overflow-hidden">
       {/* Background elements */}
-      <div className="absolute top-1/2 -right-1/4 w-96 h-96 bg-[#00d2ff]/10 rounded-full blur-[120px] pointer-events-none"></div>
-      <div className="absolute bottom-0 -left-1/4 w-96 h-96 bg-[#aa3bff]/10 rounded-full blur-[120px] pointer-events-none"></div>
+      <div className="absolute top-1/2 -right-1/4 w-96 h-96 bg-[#FF3366]/10 rounded-full blur-[120px] pointer-events-none"></div>
+      <div className="absolute bottom-0 -left-1/4 w-96 h-96 bg-[#7C3AED]/10 rounded-full blur-[120px] pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         
@@ -118,7 +118,7 @@ export default function AIToolkit() {
           transition={{ duration: 0.6 }}
           className="text-center mb-20"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border border-[#00d2ff]/30 text-[#00d2ff] text-sm font-semibold mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border border-[#FF3366]/30 text-[#FF3366] text-sm font-semibold mb-6">
             <Sparkles size={16} /> AI Generalist & Strategist
           </div>
           <h2 className="text-4xl md:text-6xl font-bold font-display mb-6">

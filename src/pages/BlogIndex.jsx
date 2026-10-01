@@ -19,8 +19,8 @@ export default function BlogIndex() {
 
       <div className="grid md:grid-cols-2 gap-8">
         {blogPosts.map((post) => (
-          <Link key={post.slug} to={`/blog/${post.slug}`} className="glass-card p-8 rounded-3xl hover:border-[#00d2ff]/50 transition-colors group">
-            <div className="text-[#00d2ff] text-sm font-semibold mb-3">{post.category}</div>
+          <Link key={post.slug} to={`/blog/${post.slug}`} className="glass-card p-8 rounded-3xl hover:border-[#FF3366]/50 transition-colors group">
+            <div className="text-[#FF3366] text-sm font-semibold mb-3">{post.category}</div>
             <h2 className="text-2xl font-bold mb-4 group-hover:text-gradient transition-colors">{post.title}</h2>
             <p className="text-gray-400 mb-6">{post.excerpt}</p>
             <div className="flex items-center justify-between text-sm text-gray-500">

@@ -8,7 +8,7 @@ function renderContent(markdown) {
   
   const renderInline = (text) => {
     let html = text.replace(/\*\*(.*?)\*\*/g, '<strong class="text-white font-semibold">$1</strong>');
-    html = html.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-[#00d2ff] hover:underline">$1</a>');
+    html = html.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-[#FF3366] hover:underline">$1</a>');
     return <span dangerouslySetInnerHTML={{ __html: html }} />;
   };
 
@@ -16,7 +16,7 @@ function renderContent(markdown) {
     if (line.startsWith('### ')) {
       return <h3 key={idx} className="text-2xl font-bold text-white mt-8 mb-4">{line.replace('### ', '')}</h3>;
     } else if (line.startsWith('## ')) {
-      return <h2 key={idx} className="text-3xl font-bold text-[#00d2ff] mt-10 mb-6">{line.replace('## ', '')}</h2>;
+      return <h2 key={idx} className="text-3xl font-bold text-[#FF3366] mt-10 mb-6">{line.replace('## ', '')}</h2>;
     } else if (line.trim() === '') {
       return null;
     } else {
@@ -41,12 +41,12 @@ export default function ProjectPost() {
         url={`https://munwarali.in/portfolio/${project.slug}`}
       />
       
-      <Link to="/portfolio" className="inline-flex items-center gap-2 text-[#00d2ff] hover:text-[#aa3bff] transition-colors mb-8">
+      <Link to="/portfolio" className="inline-flex items-center gap-2 text-[#FF3366] hover:text-[#7C3AED] transition-colors mb-8">
         <ArrowLeft size={20} /> Back to Portfolio
       </Link>
 
       <header className="mb-12">
-        <div className="text-[#aa3bff] font-semibold mb-4 tracking-wider uppercase text-sm">{project.category}</div>
+        <div className="text-[#7C3AED] font-semibold mb-4 tracking-wider uppercase text-sm">{project.category}</div>
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display mb-6 leading-tight">{project.title}</h1>
         <div className="flex items-center gap-4 text-gray-400">
           <span>By <strong className="text-white">{project.author}</strong></span>

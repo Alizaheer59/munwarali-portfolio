@@ -8,7 +8,7 @@ export default function AboutPage() {
         url={`https://munwarali.in/${'about'}`}
       />
       <div className="glass-card p-12 rounded-3xl relative overflow-hidden">
-        <div className="absolute -inset-0.5 bg-gradient-to-tr from-[#00d2ff] to-[#aa3bff] rounded-3xl opacity-20 blur-sm"></div>
+        <div className="absolute -inset-0.5 bg-gradient-to-tr from-[#FF3366] to-[#7C3AED] rounded-3xl opacity-20 blur-sm"></div>
         <div className="relative z-10">
           <h1 className="text-4xl md:text-6xl font-bold font-display mb-6"><span className="text-gradient">About</span></h1>
           <p className="text-xl text-gray-300">

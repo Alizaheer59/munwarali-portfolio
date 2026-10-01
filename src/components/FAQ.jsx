@@ -15,7 +15,7 @@ export default function FAQ() {
       <div className="max-w-4xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold font-display mb-4">Frequently Asked <span className="text-gradient">Questions</span></h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-[#00d2ff] to-[#aa3bff] mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-[#FF3366] to-[#7C3AED] mx-auto rounded-full"></div>
           <p className="mt-6 text-gray-400">Answer Engine Optimized (AEO) insights on Digital Marketing & AI.</p>
         </div>
 
@@ -28,7 +28,7 @@ export default function FAQ() {
               >
                 <span className="font-semibold text-lg">{faq.question}</span>
                 <ChevronDown 
-                  className={`transform transition-transform duration-300 ${openIndex === index ? 'rotate-180 text-[#00d2ff]' : 'text-gray-400'}`} 
+                  className={`transform transition-transform duration-300 ${openIndex === index ? 'rotate-180 text-[#FF3366]' : 'text-gray-400'}`} 
                 />
               </button>
               <AnimatePresence>

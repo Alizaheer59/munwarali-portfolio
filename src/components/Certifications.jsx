@@ -24,7 +24,7 @@ export default function Certifications() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-bold font-display mb-4">Professional <span className="text-gradient">Certifications</span></h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-[#00d2ff] to-[#aa3bff] mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-[#FF3366] to-[#7C3AED] mx-auto rounded-full"></div>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -37,11 +37,11 @@ export default function Certifications() {
               className="glass-card p-6 rounded-2xl relative group overflow-hidden perspective-1000 transform-gpu"
               style={{ transformStyle: 'preserve-3d' }}
             >
-              <div className="absolute inset-0 bg-gradient-to-tr from-[#00d2ff]/20 to-[#aa3bff]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl"></div>
+              <div className="absolute inset-0 bg-gradient-to-tr from-[#FF3366]/20 to-[#7C3AED]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl"></div>
               
               <div className="relative z-10 flex flex-col items-center text-center h-full justify-center gap-4">
-                <div className="w-16 h-16 rounded-full bg-white/5 flex items-center justify-center border border-white/10 group-hover:border-[#00d2ff] transition-colors duration-300">
-                  <Award className="text-[#aa3bff] w-8 h-8 group-hover:text-[#00d2ff] transition-colors" />
+                <div className="w-16 h-16 rounded-full bg-white/5 flex items-center justify-center border border-white/10 group-hover:border-[#FF3366] transition-colors duration-300">
+                  <Award className="text-[#7C3AED] w-8 h-8 group-hover:text-[#FF3366] transition-colors" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-200 group-hover:text-white transition-colors">{cert}</h3>
               </div>

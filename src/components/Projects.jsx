@@ -43,7 +43,7 @@ export default function Projects() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-bold font-display mb-4">Featured <span className="text-gradient">Projects</span></h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-[#00d2ff] to-[#aa3bff] mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-[#FF3366] to-[#7C3AED] mx-auto rounded-full"></div>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-8">
@@ -53,11 +53,11 @@ export default function Projects() {
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="glass-card rounded-2xl overflow-hidden group hover:border-[#aa3bff]/50 transition-colors"
+              className="glass-card rounded-2xl overflow-hidden group hover:border-[#7C3AED]/50 transition-colors"
             >
               {/* Thumbnail Placeholder */}
               <div className="h-48 bg-gray-900 relative overflow-hidden flex items-center justify-center">
-                 <div className="absolute inset-0 bg-gradient-to-br from-[#00d2ff]/10 to-[#aa3bff]/10 opacity-50"></div>
+                 <div className="absolute inset-0 bg-gradient-to-br from-[#FF3366]/10 to-[#7C3AED]/10 opacity-50"></div>
                  <MonitorPlay className="w-12 h-12 text-white/20 group-hover:scale-110 transition-transform duration-500" />
                  <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
                     <button className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white backdrop-blur-md transition-colors">
@@ -70,7 +70,7 @@ export default function Projects() {
               </div>
               
               <div className="p-6">
-                <div className="text-xs font-mono text-[#00d2ff] mb-2">{project.category}</div>
+                <div className="text-xs font-mono text-[#FF3366] mb-2">{project.category}</div>
                 <h3 className="text-xl font-bold text-white mb-3">{project.title}</h3>
                 <p className="text-gray-400 text-sm mb-4 leading-relaxed">{project.description}</p>
                 <div className="flex flex-wrap gap-2">

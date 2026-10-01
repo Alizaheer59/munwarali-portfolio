@@ -20,7 +20,7 @@ export default function Skills() {
 
   return (
     <section id="skills" className="py-24 relative">
-      <div className="absolute inset-0 bg-[#aa3bff]/5 skew-y-3 transform origin-top-left -z-10"></div>
+      <div className="absolute inset-0 bg-[#7C3AED]/5 skew-y-3 transform origin-top-left -z-10"></div>
       
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
@@ -31,7 +31,7 @@ export default function Skills() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-bold font-display mb-4">Core <span className="text-gradient">Competencies</span></h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-[#00d2ff] to-[#aa3bff] mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-[#FF3366] to-[#7C3AED] mx-auto rounded-full"></div>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -59,7 +59,7 @@ export default function Skills() {
                     initial={{ strokeDasharray: "0, 100" }}
                     animate={inView ? { strokeDasharray: `${skill.level}, 100` } : {}}
                     transition={{ duration: 1.5, delay: 0.5 }}
-                    className="text-[#00d2ff]"
+                    className="text-[#FF3366]"
                     d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
                     fill="none"
                     stroke="url(#gradient)"
@@ -67,8 +67,8 @@ export default function Skills() {
                   />
                   <defs>
                     <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                      <stop offset="0%" stopColor="#00d2ff" />
-                      <stop offset="100%" stopColor="#aa3bff" />
+                      <stop offset="0%" stopColor="#FF3366" />
+                      <stop offset="100%" stopColor="#7C3AED" />
                     </linearGradient>
                   </defs>
                 </svg>

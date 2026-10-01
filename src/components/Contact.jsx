@@ -53,7 +53,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="py-24 relative">
-      <div className="absolute inset-0 bg-[#00d2ff]/5 skew-y-[-3deg] transform origin-top-right -z-10"></div>
+      <div className="absolute inset-0 bg-[#FF3366]/5 skew-y-[-3deg] transform origin-top-right -z-10"></div>
       
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
@@ -64,7 +64,7 @@ export default function Contact() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-bold font-display mb-4">Let's <span className="text-gradient">Connect</span></h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-[#00d2ff] to-[#aa3bff] mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-[#FF3366] to-[#7C3AED] mx-auto rounded-full"></div>
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12">
@@ -75,38 +75,38 @@ export default function Contact() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="space-y-6"
           >
-            <div className="glass-card p-6 rounded-2xl flex items-center gap-6 group hover:border-[#00d2ff]/50 transition-colors">
-              <div className="w-14 h-14 rounded-full bg-[#00d2ff]/10 flex items-center justify-center text-[#00d2ff] group-hover:scale-110 transition-transform">
+            <div className="glass-card p-6 rounded-2xl flex items-center gap-6 group hover:border-[#FF3366]/50 transition-colors">
+              <div className="w-14 h-14 rounded-full bg-[#FF3366]/10 flex items-center justify-center text-[#FF3366] group-hover:scale-110 transition-transform">
                 <Phone size={24} />
               </div>
               <div>
                 <h4 className="text-gray-400 text-sm">Phone</h4>
-                <a href="tel:+916303822359" className="text-xl font-semibold text-white hover:text-[#00d2ff] transition-colors">+91 6303822359</a>
+                <a href="tel:+916303822359" className="text-xl font-semibold text-white hover:text-[#FF3366] transition-colors">+91 6303822359</a>
               </div>
             </div>
 
-            <div className="glass-card p-6 rounded-2xl flex items-center gap-6 group hover:border-[#aa3bff]/50 transition-colors">
-              <div className="w-14 h-14 rounded-full bg-[#aa3bff]/10 flex items-center justify-center text-[#aa3bff] group-hover:scale-110 transition-transform">
+            <div className="glass-card p-6 rounded-2xl flex items-center gap-6 group hover:border-[#7C3AED]/50 transition-colors">
+              <div className="w-14 h-14 rounded-full bg-[#7C3AED]/10 flex items-center justify-center text-[#7C3AED] group-hover:scale-110 transition-transform">
                 <Mail size={24} />
               </div>
               <div>
                 <h4 className="text-gray-400 text-sm">Email</h4>
-                <a href="mailto:alizaheermohammed@gmail.com" className="text-xl font-semibold text-white hover:text-[#aa3bff] transition-colors break-all">alizaheermohammed@gmail.com</a>
+                <a href="mailto:alizaheermohammed@gmail.com" className="text-xl font-semibold text-white hover:text-[#7C3AED] transition-colors break-all">alizaheermohammed@gmail.com</a>
               </div>
             </div>
 
-            <div className="glass-card p-6 rounded-2xl flex items-center gap-6 group hover:border-[#00d2ff]/50 transition-colors">
-              <div className="w-14 h-14 rounded-full bg-[#00d2ff]/10 flex items-center justify-center text-[#00d2ff] group-hover:scale-110 transition-transform">
+            <div className="glass-card p-6 rounded-2xl flex items-center gap-6 group hover:border-[#FF3366]/50 transition-colors">
+              <div className="w-14 h-14 rounded-full bg-[#FF3366]/10 flex items-center justify-center text-[#FF3366] group-hover:scale-110 transition-transform">
                 <Link size={24} />
               </div>
               <div>
                 <h4 className="text-gray-400 text-sm">LinkedIn</h4>
-                <a href="https://www.linkedin.com/in/munwaralizaheer" target="_blank" rel="noopener noreferrer" className="text-xl font-semibold text-white hover:text-[#00d2ff] transition-colors">munwaralizaheer</a>
+                <a href="https://www.linkedin.com/in/munwaralizaheer" target="_blank" rel="noopener noreferrer" className="text-xl font-semibold text-white hover:text-[#FF3366] transition-colors">munwaralizaheer</a>
               </div>
             </div>
 
-            <div className="glass-card p-6 rounded-2xl flex items-center gap-6 group hover:border-[#aa3bff]/50 transition-colors">
-              <div className="w-14 h-14 rounded-full bg-[#aa3bff]/10 flex items-center justify-center text-[#aa3bff] group-hover:scale-110 transition-transform">
+            <div className="glass-card p-6 rounded-2xl flex items-center gap-6 group hover:border-[#7C3AED]/50 transition-colors">
+              <div className="w-14 h-14 rounded-full bg-[#7C3AED]/10 flex items-center justify-center text-[#7C3AED] group-hover:scale-110 transition-transform">
                 <MapPin size={24} />
               </div>
               <div>
@@ -123,7 +123,7 @@ export default function Contact() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="glass-card p-8 rounded-3xl relative overflow-hidden"
           >
-            <div className="absolute -inset-0.5 bg-gradient-to-tr from-[#00d2ff] to-[#aa3bff] rounded-3xl opacity-20 blur-xl"></div>
+            <div className="absolute -inset-0.5 bg-gradient-to-tr from-[#FF3366] to-[#7C3AED] rounded-3xl opacity-20 blur-xl"></div>
             
             <div className="relative z-10">
               <AnimatePresence mode="wait">
@@ -158,22 +158,22 @@ export default function Contact() {
                     <div className="grid grid-cols-2 gap-4">
                       <div>
                         <label htmlFor="contact-name" className="block text-sm font-medium text-gray-400 mb-1">Name *</label>
-                        <input id="contact-name" required type="text" name="name" value={formData.name} onChange={handleChange} className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#00d2ff] transition-colors" placeholder="John Doe" />
+                        <input id="contact-name" required type="text" name="name" value={formData.name} onChange={handleChange} className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#FF3366] transition-colors" placeholder="John Doe" />
                       </div>
                       <div>
                         <label htmlFor="contact-phone" className="block text-sm font-medium text-gray-400 mb-1">Phone *</label>
-                        <input id="contact-phone" required type="tel" name="phone" value={formData.phone} onChange={handleChange} className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#aa3bff] transition-colors" placeholder="+91 9876543210" />
+                        <input id="contact-phone" required type="tel" name="phone" value={formData.phone} onChange={handleChange} className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#7C3AED] transition-colors" placeholder="+91 9876543210" />
                       </div>
                     </div>
                     
                     <div>
                       <label htmlFor="contact-email" className="block text-sm font-medium text-gray-400 mb-1">Email *</label>
-                      <input id="contact-email" required type="email" name="email" value={formData.email} onChange={handleChange} className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#00d2ff] transition-colors" placeholder="john@example.com" />
+                      <input id="contact-email" required type="email" name="email" value={formData.email} onChange={handleChange} className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#FF3366] transition-colors" placeholder="john@example.com" />
                     </div>
 
                     <div>
                       <label htmlFor="contact-service" className="block text-sm font-medium text-gray-400 mb-1">Service Required *</label>
-                      <select id="contact-service" required name="service" value={formData.service} onChange={handleChange} className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#aa3bff] transition-colors appearance-none">
+                      <select id="contact-service" required name="service" value={formData.service} onChange={handleChange} className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#7C3AED] transition-colors appearance-none">
                         {services.map(service => (
                           <option key={service} value={service} className="bg-[#050505] text-white">{service}</option>
                         ))}
@@ -182,7 +182,7 @@ export default function Contact() {
 
                     <div>
                       <label htmlFor="contact-message" className="block text-sm font-medium text-gray-400 mb-1">Message *</label>
-                      <textarea id="contact-message" required rows="4" name="message" value={formData.message} onChange={handleChange} className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#00d2ff] transition-colors resize-none" placeholder="Tell me about your project..."></textarea>
+                      <textarea id="contact-message" required rows="4" name="message" value={formData.message} onChange={handleChange} className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#FF3366] transition-colors resize-none" placeholder="Tell me about your project..."></textarea>
                     </div>
 
                     {status === 'error' && (
@@ -194,7 +194,7 @@ export default function Contact() {
 
                     <button 
                       disabled={status === 'submitting'}
-                      className="w-full py-4 rounded-xl bg-gradient-to-r from-[#00d2ff] to-[#aa3bff] text-white font-bold text-lg hover:opacity-90 transition-opacity flex items-center justify-center gap-2 group box-glow disabled:opacity-50 disabled:cursor-not-allowed"
+                      className="w-full py-4 rounded-xl bg-gradient-to-r from-[#FF3366] to-[#7C3AED] text-white font-bold text-lg hover:opacity-90 transition-opacity flex items-center justify-center gap-2 group box-glow disabled:opacity-50 disabled:cursor-not-allowed"
                     >
                       {status === 'submitting' ? (
                         <>

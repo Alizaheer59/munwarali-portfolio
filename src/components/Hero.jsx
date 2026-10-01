@@ -1,64 +1,63 @@
 import { motion } from 'framer-motion';
-import { Download, Mail, MessageCircle, ArrowRight } from 'lucide-react';
+import { Mail, ArrowRight } from 'lucide-react';
 
 export default function Hero() {
-  
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+  };
+
   return (
-    <section id="home" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden text-center">
       {/* Background glowing orbs */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#aa3bff]/20 rounded-full blur-[120px] animate-blob"></div>
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#00d2ff]/20 rounded-full blur-[120px] animate-blob" style={{ animationDelay: '2s' }}></div>
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#7C3AED]/20 rounded-full blur-[120px] animate-blob"></div>
+      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#FF3366]/20 rounded-full blur-[120px] animate-blob" style={{ animationDelay: '2s' }}></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-3xl h-[400px] bg-gradient-to-tr from-[#7C3AED]/20 to-[#FF3366]/20 rounded-full blur-[150px] animate-pulse-slow"></div>
 
-      <div className="max-w-7xl mx-auto px-6 w-full grid lg:grid-cols-2 gap-12 items-center relative z-10">
+      <div className="max-w-5xl mx-auto px-6 w-full relative z-10">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="flex flex-col gap-6"
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+          className="flex flex-col items-center justify-center gap-6"
         >
-
-          <h1 className="text-5xl lg:text-7xl font-bold font-display leading-tight">
-            MOHAMMED <br />
-            MUNWAR ALI <br />
-            <span className="text-gradient">ZAHEER</span>
-          </h1>
+          {/* Animated Name */}
+          <motion.div variants={itemVariants} className="overflow-hidden">
+            <h1 className="text-6xl md:text-8xl lg:text-[7rem] font-bold font-display leading-tight tracking-tight uppercase">
+              MOHAMMED <br />
+              MUNWAR ALI <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF3366] to-[#7C3AED]">ZAHEER</span>
+            </h1>
+          </motion.div>
           
-          <h2 className="text-xl lg:text-2xl text-gray-300 font-light">
-            Digital Marketing Professional | Media Content Specialist
-          </h2>
+          {/* Animated Headline */}
+          <motion.div variants={itemVariants} className="overflow-hidden max-w-3xl">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl text-gray-300 font-light mt-4 leading-relaxed">
+              Digital Marketing Professional <span className="text-[#FF3366] font-medium">&</span> Media Content Specialist
+            </h2>
+            <p className="mt-6 text-gray-400 text-lg md:text-xl max-w-2xl mx-auto">
+              Blending creativity, AI automation, and modern digital strategies to build unforgettable brand experiences and drive growth.
+            </p>
+          </motion.div>
 
-          <div className="flex flex-wrap gap-4 mt-4">
-            <a href="#contact" className="px-6 py-3 rounded-xl bg-white text-black font-semibold flex items-center gap-2 hover:scale-105 transition-transform">
-              <Mail size={18} /> Contact Me
+          {/* CTA Buttons */}
+          <motion.div variants={itemVariants} className="flex flex-wrap justify-center gap-6 mt-10">
+            <a href="#contact" className="px-8 py-4 rounded-xl bg-white text-black font-semibold flex items-center gap-2 hover:scale-105 transition-transform shadow-[0_0_20px_rgba(255,51,102,0.3)]">
+              <Mail size={20} /> Contact Me
             </a>
-            <a href="#experience" className="px-6 py-3 rounded-xl glass-card neon-border font-semibold flex items-center gap-2 hover:bg-white/5 transition-colors">
-              <ArrowRight size={18} /> View Experience
+            <a href="#experience" className="px-8 py-4 rounded-xl glass-card neon-border font-semibold flex items-center gap-2 hover:bg-white/5 transition-colors group">
+              View Experience <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
             </a>
-          </div>
-        </motion.div>
-
-        {/* 3D or abstract visual side */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, delay: 0.2 }}
-          className="relative h-[500px] flex items-center justify-center"
-        >
-          <motion.div 
-            whileHover={{ scale: 1.05, rotateY: 5, rotateX: -5 }}
-            className="relative w-full max-w-[400px] h-[400px] lg:h-[500px] mx-auto flex items-center justify-center transform-gpu cursor-pointer"
-            style={{ transformStyle: "preserve-3d", perspective: "1000px" }}
-          >
-             {/* Neon glow behind the image */}
-             <div className="absolute inset-4 bg-gradient-to-tr from-[#aa3bff] to-[#00d2ff] rounded-3xl blur-2xl opacity-40 animate-pulse-slow"></div>
-             
-             {/* Image container */}
-             <div className="absolute inset-0 glass-card rounded-3xl border-2 border-white/10 hover:border-[#00d2ff]/50 overflow-hidden transition-colors duration-500 flex items-center justify-center bg-black/40">
-               
-               
-               {/* Overlay gradient for futuristic depth */}
-               <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-transparent opacity-60 pointer-events-none"></div>
-             </div>
           </motion.div>
         </motion.div>
       </div>

@@ -15,7 +15,7 @@ export default function About() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-bold font-display mb-4">About <span className="text-gradient">Me</span></h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-[#00d2ff] to-[#aa3bff] mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-[#FF3366] to-[#7C3AED] mx-auto rounded-full"></div>
         </motion.div>
 
         <div className="max-w-3xl mx-auto">
@@ -27,9 +27,9 @@ export default function About() {
             style={{ transformStyle: "preserve-3d", perspective: "1000px" }}
             whileHover={{ scale: 1.05, rotateX: 5, rotateY: -5 }}
           >
-            <div className="absolute -inset-0.5 bg-gradient-to-tr from-[#00d2ff] to-[#aa3bff] rounded-3xl opacity-20 blur-sm"></div>
+            <div className="absolute -inset-0.5 bg-gradient-to-tr from-[#FF3366] to-[#7C3AED] rounded-3xl opacity-20 blur-sm"></div>
             <div className="relative z-10 text-center">
-              <h3 className="text-2xl font-semibold mb-6 text-[#00d2ff]">Digital Marketing & Content Specialist</h3>
+              <h3 className="text-2xl font-semibold mb-6 text-[#FF3366]">Digital Marketing & Content Specialist</h3>
               <p className="text-gray-300 leading-relaxed mb-6 text-lg">
                 Digital Marketing professional with experience supporting digital campaigns, website management, content marketing, social media, branding, and AI-powered content creation.
               </p>

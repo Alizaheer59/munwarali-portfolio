@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <footer className="py-12 border-t border-white/5 relative z-10 bg-black">
       <div className="max-w-7xl mx-auto px-6 text-center flex flex-col items-center">
-        <div className="w-12 h-12 rounded-xl bg-gradient-to-tr from-[#00d2ff] to-[#aa3bff] flex items-center justify-center font-bold text-xl text-white mb-6 shadow-[0_0_15px_rgba(170,59,255,0.5)]">
+        <div className="w-12 h-12 rounded-xl bg-gradient-to-tr from-[#FF3366] to-[#7C3AED] flex items-center justify-center font-bold text-xl text-white mb-6 shadow-[0_0_15px_rgba(170,59,255,0.5)]">
           MA
         </div>
         
