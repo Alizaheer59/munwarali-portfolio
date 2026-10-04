@@ -3,77 +3,29 @@ import { useInView } from 'react-intersection-observer';
 
 export default function Skills() {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
-
   const skillsList = [
-    { name: "Social Media Marketing", level: 95 },
-    { name: "AI Content Creation", level: 92 },
-    { name: "SEO & Content Optimization", level: 90 },
-    { name: "Canva Design", level: 88 },
-    { name: "Instagram Marketing", level: 90 },
-    { name: "LinkedIn Marketing", level: 88 },
-    { name: "AI Copywriting", level: 92 },
-    { name: "Video Content Planning", level: 85 },
-    { name: "Marketing Analytics", level: 80 },
-    { name: "Website Management", level: 85 },
-    { name: "Prompt Engineering", level: 95 }
+    { cat: "Startup Operations", items: ["Business Operations", "Project Management", "Team Coordination", "Process Improvement", "Documentation"] },
+    { cat: "AI & Automation", items: ["Prompt Engineering", "AI Workflows", "Automation", "Generative AI", "AI Research"] },
+    { cat: "Growth", items: ["SEO", "Content Strategy", "Digital Marketing", "Marketing Analytics", "GTM Support"] },
+    { cat: "Technology", items: ["WordPress", "Google Workspace", "GitHub", "Vercel", "Canva", "Notion"] }
   ];
 
   return (
     <section id="skills" className="py-24 relative">
-      <div className="absolute inset-0 bg-[#7C3AED]/5 skew-y-3 transform origin-top-left -z-10"></div>
-      
       <div className="max-w-7xl mx-auto px-6">
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, y: 30 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-3xl md:text-5xl font-bold font-display mb-4">Core <span className="text-gradient">Competencies</span></h2>
+        <motion.div ref={ref} initial={{ opacity: 0, y: 30 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6 }} className="text-center mb-16">
+          <h2 className="text-3xl md:text-5xl font-bold font-display mb-4">Core <span className="text-gradient">Skills</span></h2>
           <div className="w-24 h-1 bg-gradient-to-r from-[#FF3366] to-[#7C3AED] mx-auto rounded-full"></div>
         </motion.div>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {skillsList.map((skill, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={inView ? { opacity: 1, scale: 1 } : {}}
-              transition={{ duration: 0.4, delay: index * 0.05 }}
-              className="glass-card p-6 rounded-2xl neon-border flex items-center justify-between group"
-            >
-              <span className="font-medium text-gray-200 group-hover:text-white transition-colors">{skill.name}</span>
-              
-              {/* Circular Indicator Placeholder for premium feel */}
-              <div className="relative w-12 h-12 flex items-center justify-center">
-                <svg className="w-full h-full transform -rotate-90" viewBox="0 0 36 36">
-                  <path
-                    className="text-gray-700"
-                    d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="3"
-                  />
-                  <motion.path
-                    initial={{ strokeDasharray: "0, 100" }}
-                    animate={inView ? { strokeDasharray: `${skill.level}, 100` } : {}}
-                    transition={{ duration: 1.5, delay: 0.5 }}
-                    className="text-[#FF3366]"
-                    d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
-                    fill="none"
-                    stroke="url(#gradient)"
-                    strokeWidth="3"
-                  />
-                  <defs>
-                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                      <stop offset="0%" stopColor="#FF3366" />
-                      <stop offset="100%" stopColor="#7C3AED" />
-                    </linearGradient>
-                  </defs>
-                </svg>
-                <span className="absolute text-xs font-bold text-white">{skill.level}%</span>
-              </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {skillsList.map((skillGroup, index) => (
+            <motion.div key={index} initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.4, delay: index * 0.1 }} className="glass-card p-8 rounded-3xl group">
+              <h3 className="text-2xl font-bold text-[#FF3366] mb-6">{skillGroup.cat}</h3>
+              <ul className="space-y-3">
+                {skillGroup.items.map((item, idx) => (
+                  <li key={idx} className="text-gray-300 font-medium">{item}</li>
+                ))}
+              </ul>
             </motion.div>
           ))}
         </div>

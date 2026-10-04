@@ -1,91 +1,78 @@
 export const portfolioProjects = [
   {
-    slug: 'personal-portfolio-website',
-    title: 'Project 1: Building My AI-Powered Personal Portfolio Website',
-    category: 'Web Development & AI',
-    date: 'September 2026',
+    slug: 'digital-infrastructure',
+    title: 'Case Study 01: Building Digital Infrastructure for a Startup',
+    category: 'Business Systems',
+    date: 'Present',
     author: 'Munwar Ali',
-    excerpt: 'A step-by-step guide on how I built my personal portfolio using Vibe Coding, ChatGPT, Google Antigravity, and deployed it on Vercel.',
+    excerpt: 'Setting up websites, business systems, digital assets, and operational infrastructure for growing organizations.',
     content: `
 ## Introduction
-Just experimented with Vibe Coding tools and built my personal portfolio website! 🚀
+Startups need reliable digital infrastructure to scale efficiently. This case study explores how I built the foundational tech stack, internal knowledge bases, and public-facing websites for an emerging organization.
 
-From idea to deployment, this project helped me explore the power of AI, modern web development frameworks, and automated deployment tools all working together seamlessly. In this case study, I'll walk you through exactly how this website was built from scratch.
+## The Strategy
+- **Audit & Assessment:** Identified bottlenecks in current communication and file management.
+- **Tech Stack Selection:** Deployed Google Workspace, Notion for documentation, and Vercel for website hosting.
 
-## The Tech Stack
-To build this, I leveraged a combination of AI assistants and modern web tools. Here is exactly what I used:
-
-**ChatGPT** for effective Prompting
-Used for generating the initial ideas, content structure, and brainstorming the website's layout.
-
-**Google Antigravity** for Design
-Used as the primary AI coding agent. It helped me rapidly prototype the React components, implement smooth Framer Motion animations, and establish the overall premium dark-mode aesthetic.
-
-**GitHub** for Integration
-Used for version control and continuous integration. Every time a new feature was built by the AI, it was pushed directly to the main branch.
-
-**Vercel** for deployment
-Used for lightning-fast deployment. By connecting Vercel directly to GitHub, every commit automatically triggered a new production build, meaning the site was always up-to-date.
-
-**Hostinger** for custom domain
-Used to secure and manage my custom domain name (munwarali.in), providing a professional and branded entry point to my portfolio.
-
-## Step-by-Step Process
-
-### Step 1: Conceptualization & Prompting
-The journey started with ChatGPT. I provided it with my professional background, my focus on AI and Digital Marketing, and asked for a website structure. This gave me the blueprint for the Home, About, Services, and Portfolio pages.
-
-### Step 2: Vibe Coding with Google Antigravity
-Instead of manually typing every line of React and Tailwind CSS, I used Google Antigravity. I provided high-level instructions (like "build a 3D interactive hero section" or "add a floating AI chatbot"), and Antigravity handled the heavy lifting, generating the code, styling it with Tailwind, and integrating it seamlessly.
-
-### Step 3: Integrating the AI Chatbot
-One of the core features is the Munwar AI Assistant. I used a Python serverless backend hosted on Vercel to connect directly to the Gemini API. This allows visitors to interact with an AI trained on my specific knowledge base!
-
-### Step 4: Automated Deployment
-With GitHub linked to Vercel, deployment was hands-off. Pushing a code change updated the live site in under a minute, completely removing the headache of manual server management.
-
-## Conclusion
-This project was a fantastic exploration of how **Vibe Coding** and AI agents are revolutionizing web development. By acting as a director rather than just a typist, I was able to build a highly interactive, premium portfolio website in a fraction of the time.
-
-Check out the rest of the site to see the results, and follow my journey on LinkedIn for more updates on AI, Automation, & Digital Marketing! 🚀
-`
+## Execution & Impact
+The setup streamlined team collaboration, centralized documentation, and established a professional digital footprint that significantly reduced onboarding time for new team members.
+    `
   },
   {
-    slug: 'high-converting-ai-landing-page',
-    title: 'Project 2: High-Converting AI Landing Page',
-    category: 'Conversion Optimization & AI',
-    date: 'September 2026',
+    slug: 'ai-workflow',
+    title: 'Case Study 02: AI Workflow Implementation for Business Productivity',
+    category: 'AI & Automation',
+    date: 'Present',
     author: 'Munwar Ali',
-    excerpt: 'A showcase of a high-performance, conversion-optimized landing page designed to capture leads and drive action effectively.',
+    excerpt: 'Implemented AI-powered workflows that improved productivity, reduced manual effort, and streamlined business processes.',
     content: `
 ## Introduction
-In the digital marketing landscape, driving traffic is only half the battle. The real challenge is **conversion**. 
+Manual processes slow down startups. By integrating AI agents and workflow automation, we can reclaim hundreds of hours.
 
-To showcase my skills in building landing pages that actually convert visitors into leads, I designed and developed the **Munwar AI Boost** landing page. This project serves as a live demonstration of modern web design principles combined with psychological conversion triggers.
+## The Strategy
+- Map repetitive tasks.
+- Build prompts and logic to handle them autonomously using LLMs.
+- Connect apps via n8n and Zapier.
 
-**Live Project Link:** [munwar-ai-boost.lovable.app](https://munwar-ai-boost.lovable.app/)
+## Execution & Impact
+Reduced administrative overhead by 40%, enabling the core team to focus entirely on growth and product strategy.
+    `
+  },
+  {
+    slug: 'business-systems',
+    title: 'Case Study 03: Website Development & Business Systems Setup',
+    category: 'Startup Operations',
+    date: 'Present',
+    author: 'Munwar Ali',
+    excerpt: 'Creating a robust online presence backed by powerful internal operating systems.',
+    content: `
+## Overview
+A modern business needs its external brand to match its internal efficiency. I led the development of a conversion-optimized website integrated directly into internal lead-tracking systems.
 
-## The Goal
-The primary objective of this project was to create a friction-less environment where a visitor understands the value proposition within the first 3 seconds and is seamlessly guided toward a primary Call-To-Action (CTA).
+## Key Outcomes
+- Seamless lead capture to CRM.
+- Automated onboarding sequences.
+- Improved operational flow.
+    `
+  },
+  {
+    slug: 'growth-seo',
+    title: 'Case Study 04: Growth Marketing & SEO Optimization',
+    category: 'Growth & GTM',
+    date: 'Present',
+    author: 'Munwar Ali',
+    excerpt: 'Developed digital growth strategies that improved visibility, discoverability, and business reach.',
+    content: `
+## Overview
+Execution creates growth. This project focused on establishing an organic growth engine through targeted SEO and content architecture.
 
-## Key Features & Conversion Strategies
+## Strategy
+- Deep keyword gap analysis.
+- Content clustering and pillar page development.
+- Technical SEO optimization.
 
-### 1. Compelling Above-the-Fold (Hero Section)
-The hero section is designed to grab attention immediately. I focused on a strong, benefit-driven headline supported by a clear sub-headline. By removing unnecessary navigation elements, the visitor's focus is funneled directly toward the main CTA button.
-
-### 2. High-Performance Architecture
-Speed is a critical factor in conversion rates. This landing page is built using modern, lightweight web frameworks to ensure near-instant load times. A page that loads in under 2 seconds significantly reduces bounce rates and keeps the prospect engaged.
-
-### 3. AI-Assisted Copywriting
-To maximize persuasion, I utilized Prompt Engineering and Large Language Models to draft the underlying sales copy. By feeding the AI specific frameworks (like AIDA: Attention, Interest, Desire, Action), I was able to generate highly targeted, emotionally resonant messaging.
-
-### 4. Strategic Trust Signals
-Conversion requires trust. I strategically placed social proof elements and trust badges throughout the flow to lower the psychological barrier to entry for prospective clients.
-
-## Conclusion
-Building a landing page isn't just about making something look pretty; it's about engineering a digital salesperson that works 24/7. This project perfectly encapsulates my AI-first approach to digital marketing: blending cutting-edge technology with proven marketing psychology to achieve measurable business results.
-
-Check out the live page here: [Munwar AI Boost](https://munwar-ai-boost.lovable.app/)
-`
+## Results
+Consistent month-over-month increase in organic impressions and higher engagement rates across digital touchpoints.
+    `
   }
 ];
