@@ -5,22 +5,6 @@ export default function Experience() {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.2 });
   const experiences = [
     {
-      company: "Alphonytix AI",
-      role: "AI Digital Marketing Lead",
-      duration: "May 2026 – Present",
-      desc: "Alphonytix AI is an AI-driven business solutions and digital transformation initiative focused on helping startups, businesses, and professionals leverage artificial intelligence, automation, content systems, and growth strategies.",
-      focus: "Founder’s Office, Startup Operations, AI Automation, Business Systems, Growth Strategy, Digital Transformation",
-      points: [
-        "Supporting business strategy and operational execution.",
-        "Developing AI-powered productivity systems and workflows.",
-        "Designing business automation solutions and internal processes.",
-        "Supporting business development and growth initiatives.",
-        "Managing websites, digital assets, and tech infrastructure.",
-        "Researching emerging AI tools and business applications.",
-        "Supporting founder-level priorities across growth, tech, and operations."
-      ]
-    },
-    {
       company: "Transformix Global LLP",
       role: "Founder’s Office Associate",
       duration: "Jan 2026 – Mar 2026",
