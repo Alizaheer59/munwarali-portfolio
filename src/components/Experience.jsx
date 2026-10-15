@@ -8,7 +8,7 @@ export default function Experience() {
   const experiences = [
     {
       company: "Transformix Global LLP",
-      role: "AI Digital Marketing Associate",
+      role: "AI Digital Marketing Lead",
       duration: "Jan 2026 – March 2026",
       location: "Visakhapatnam, AP",
       desc: "Spearheaded digital marketing initiatives, website design, and AI-driven process automation.",
@@ -21,7 +21,7 @@ export default function Experience() {
     },
     {
       company: "HPCL – Skill Development Institute",
-      role: "Digital Marketing Executive",
+      role: "Digital Marketing Specialist",
       duration: "Jan 2024 – Dec 2025",
       location: "Visakhapatnam, AP",
       desc: "Drove digital marketing campaigns, creative branding, website content management, and audience growth.",
