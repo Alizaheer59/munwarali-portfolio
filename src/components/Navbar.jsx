@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, FileText } from 'lucide-react';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -14,17 +14,20 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-      const navLinks = [
+  const navLinks = [
     { name: 'Home', href: '/' },
-    { name: 'Services', href: '/services' },
-    { name: 'Projects', href: '/portfolio' }
+    { name: 'About', href: '/#about' },
+    { name: 'Skills', href: '/#skills' },
+    { name: 'Projects', href: '/#projects' },
+    { name: 'Experience', href: '/#experience' },
+    { name: 'Contact', href: '/#contact' }
   ];
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'glass-nav py-4' : 'py-6'}`}>
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <a href="#home" className="flex items-center gap-2 group relative z-50">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#FF3366] to-[#7C3AED] flex items-center justify-center font-bold text-lg text-white shadow-[0_0_15px_rgba(170,59,255,0.5)]">
+          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#FF3366] to-[#7C3AED] flex items-center justify-center font-bold text-lg text-white shadow-[0_0_15px_rgba(255,51,102,0.5)]">
             MA
           </div>
           <div className="font-display font-bold text-xl tracking-wide flex items-center">
@@ -44,8 +47,14 @@ export default function Navbar() {
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#FF3366] to-[#7C3AED] transition-all duration-300 group-hover:w-full"></span>
             </a>
           ))}
-          <a href="/Mohammed_Munwar_Ali_Zaheer_Resume.jpg" download="Mohammed_Munwar_Ali_Zaheer_Resume.jpg" className="ml-4 px-5 py-2 rounded-xl bg-gradient-to-r from-[#FF3366] to-[#7C3AED] text-white font-semibold text-sm hover:opacity-90 transition-opacity shadow-[0_0_15px_rgba(0,210,255,0.3)] flex items-center gap-2">
-            Download Resume
+          <a 
+            href="/Mohammed_Munwar_Ali_Zaheer_Resume.pdf" 
+            target="_blank"
+            rel="noopener noreferrer"
+            download="Mohammed_Munwar_Ali_Zaheer_Resume.pdf" 
+            className="ml-4 px-5 py-2 rounded-xl bg-gradient-to-r from-[#FF3366] to-[#7C3AED] text-white font-semibold text-sm hover:opacity-90 transition-opacity shadow-[0_0_15px_rgba(255,51,102,0.3)] flex items-center gap-2"
+          >
+            <FileText size={16} /> Resume
           </a>
         </div>
 
@@ -76,16 +85,19 @@ export default function Navbar() {
             className="text-2xl font-bold text-gray-300 hover:text-white hover:text-gradient transition-all"
           >
             {link.name}
-                    </motion.a>
+          </motion.a>
         ))}
         <motion.a
-          href="/Mohammed_Munwar_Ali_Zaheer_Resume.jpg" download="Mohammed_Munwar_Ali_Zaheer_Resume.jpg"
+          href="/Mohammed_Munwar_Ali_Zaheer_Resume.pdf" 
+          target="_blank"
+          rel="noopener noreferrer"
+          download="Mohammed_Munwar_Ali_Zaheer_Resume.pdf"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: isMobileMenuOpen ? 1 : 0, y: isMobileMenuOpen ? 0 : 20 }}
           transition={{ delay: navLinks.length * 0.05 }}
-          className="mt-4 px-8 py-3 rounded-xl bg-gradient-to-r from-[#FF3366] to-[#7C3AED] text-white font-bold transition-all"
+          className="mt-4 px-8 py-3 rounded-xl bg-gradient-to-r from-[#FF3366] to-[#7C3AED] text-white font-bold transition-all flex items-center gap-2"
         >
-          Download Resume
+          <FileText size={18} /> Download Resume
         </motion.a>
       </motion.div>
     </nav>

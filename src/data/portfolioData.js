@@ -1,78 +1,82 @@
 export const portfolioProjects = [
   {
-    slug: 'digital-infrastructure',
-    title: 'Case Study 01: Building Digital Infrastructure for a Startup',
-    category: 'Business Systems',
-    date: 'Present',
+    slug: 'munwar-ai-boost',
+    title: 'Project 01: Munwar AI Boost – High Conversion Landing Page',
+    category: 'Web Design & CRO',
+    date: '2026',
     author: 'Munwar Ali',
-    excerpt: 'Setting up websites, business systems, digital assets, and operational infrastructure for growing organizations.',
+    excerpt: 'Designed and built a high-converting portfolio landing page showcase with optimized conversion flows and modern UI.',
     content: `
-## Introduction
-Startups need reliable digital infrastructure to scale efficiently. This case study explores how I built the foundational tech stack, internal knowledge bases, and public-facing websites for an emerging organization.
+## Project Overview
+A portfolio showcase landing page designed to demonstrate modern landing page design, visitor conversion architecture, and AI-powered copy integration.
 
-## The Strategy
-- **Audit & Assessment:** Identified bottlenecks in current communication and file management.
-- **Tech Stack Selection:** Deployed Google Workspace, Notion for documentation, and Vercel for website hosting.
+- **Live URL**: [https://munwar-ai-boost.lovable.app/](https://munwar-ai-boost.lovable.app/)
 
-## Execution & Impact
-The setup streamlined team collaboration, centralized documentation, and established a professional digital footprint that significantly reduced onboarding time for new team members.
+## Core Objectives
+- Create an engaging, high-conversion user journey from arrival to action.
+- Structure responsive UI elements with clear visual hierarchy.
+- Optimize call-to-actions (CTAs) for peak lead generation.
+
+## Results & Impact
+The landing page serves as a live benchmark for effective conversion page design, modern responsive web aesthetics, and frictionless user interaction.
     `
   },
   {
-    slug: 'ai-workflow',
-    title: 'Case Study 02: AI Workflow Implementation for Business Productivity',
-    category: 'AI & Automation',
-    date: 'Present',
+    slug: 'ai-marketing-campaign',
+    title: 'Project 02: AI-Powered Digital Marketing Campaign',
+    category: 'Digital Marketing & AI',
+    date: '2026',
     author: 'Munwar Ali',
-    excerpt: 'Implemented AI-powered workflows that improved productivity, reduced manual effort, and streamlined business processes.',
-    content: `
-## Introduction
-Manual processes slow down startups. By integrating AI agents and workflow automation, we can reclaim hundreds of hours.
-
-## The Strategy
-- Map repetitive tasks.
-- Build prompts and logic to handle them autonomously using LLMs.
-- Connect apps via n8n and Zapier.
-
-## Execution & Impact
-Reduced administrative overhead by 40%, enabling the core team to focus entirely on growth and product strategy.
-    `
-  },
-  {
-    slug: 'business-systems',
-    title: 'Case Study 03: Website Development & Business Systems Setup',
-    category: 'Startup Operations',
-    date: 'Present',
-    author: 'Munwar Ali',
-    excerpt: 'Creating a robust online presence backed by powerful internal operating systems.',
+    excerpt: 'End-to-end digital marketing campaign driven by AI prompt engineering, custom ad creatives, and performance tracking.',
     content: `
 ## Overview
-A modern business needs its external brand to match its internal efficiency. I led the development of a conversion-optimized website integrated directly into internal lead-tracking systems.
+Digital marketing requires agility and personalization. By integrating advanced AI prompt engineering into the campaign workflow, we generated high-converting copy, targeted ad variations, and comprehensive audience personas.
+
+## Execution
+- **Prompt Engineering**: Engineered custom prompting chains for ad hooks, body copy, and CTA variations.
+- **Multi-Channel Distribution**: Orchestrated campaigns across search and social channels.
+- **Analytics & Tracking**: Monitored real-time CTR, CPC, and conversion rates.
 
 ## Key Outcomes
-- Seamless lead capture to CRM.
-- Automated onboarding sequences.
-- Improved operational flow.
+- 40% increase in click-through rates (CTR).
+- 50% faster content turnaround time using generative AI workflows.
     `
   },
   {
-    slug: 'growth-seo',
-    title: 'Case Study 04: Growth Marketing & SEO Optimization',
-    category: 'Growth & GTM',
-    date: 'Present',
+    slug: 'seo-content-architecture',
+    title: 'Project 03: SEO & Content Optimization Architecture',
+    category: 'SEO & Content',
+    date: '2025–2026',
     author: 'Munwar Ali',
-    excerpt: 'Developed digital growth strategies that improved visibility, discoverability, and business reach.',
+    excerpt: 'Comprehensive on-page SEO, competitor research, and structured data optimization to boost organic visibility.',
     content: `
 ## Overview
-Execution creates growth. This project focused on establishing an organic growth engine through targeted SEO and content architecture.
+A structured SEO strategy designed to improve organic search visibility and ensure Answer Engine Optimization (AEO) readiness.
 
-## Strategy
-- Deep keyword gap analysis.
-- Content clustering and pillar page development.
-- Technical SEO optimization.
+## Strategy & Implementation
+- **Competitor Research**: Analyzed market competitors to identify high-value keyword gaps.
+- **On-Page Optimization**: Refined metadata, schema markups, and heading hierarchies.
+- **Content Optimization**: Engineered informative, keyword-rich content that satisfies search intent.
 
 ## Results
-Consistent month-over-month increase in organic impressions and higher engagement rates across digital touchpoints.
+Delivered consistent growth in search impressions, featured snippet captures, and quality organic lead acquisition.
+    `
+  },
+  {
+    slug: 'company-website-launch',
+    title: 'Project 04: Corporate Website Launch & Digital Presence',
+    category: 'Web Designing',
+    date: '2026',
+    author: 'Munwar Ali',
+    excerpt: 'Designed and launched the company website with Google Workspace integration and brand assets.',
+    content: `
+## Overview
+Built and deployed the company website, establishing a polished digital presence backed by cloud infrastructure.
+
+## Key Highlights
+- Designed responsive web layouts optimized for desktop and mobile devices.
+- Integrated Google Workspace for seamless corporate communication.
+- Implemented lead capture mechanisms and tracking analytics.
     `
   }
 ];

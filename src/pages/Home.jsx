@@ -2,6 +2,7 @@ import SEO from '../components/SEO';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Skills from '../components/Skills';
+import Projects from '../components/Projects';
 import AIToolkit from '../components/AIToolkit';
 import Experience from '../components/Experience';
 import ImageGallery from '../components/ImageGallery';
@@ -16,8 +17,10 @@ export default function Home() {
     "@type": "Person",
     "name": "Mohammed Munwar Ali Zaheer",
     "url": "https://munwarali.in",
-    "jobTitle": "Digital Marketing Professional | Media Content Specialist",
-    "description": "Blending AI, Creativity, Automation & Modern Digital Strategy",
+    "jobTitle": "Digital Marketing Specialist | AI Prompt Engineer",
+    "description": "Digital Marketing Specialist skilled in digital marketing campaigns, web designing, SEO and content optimization, copywriting, and AI prompt engineering.",
+    "telephone": "+916303822359",
+    "email": "mailto:alizaheermohammed@gmail.com",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Visakhapatnam",
@@ -39,13 +42,14 @@ export default function Home() {
   return (
     <>
       <SEO 
-        title="Mohammed Munwar Ali Zaheer | Digital Marketing & Generative ai professional" 
-        description="Digital Marketing, SEO, GEO, AEO, AI Automation and Content Strategy Professional helping brands grow through AI-powered marketing systems."
+        title="Mohammed Munwar Ali Zaheer | Digital Marketing Specialist & AI Prompt Engineer" 
+        description="Digital Marketing Specialist & AI Prompt Engineer skilled in digital marketing campaigns, web designing, SEO, content optimization, and AI prompt engineering."
         schema={combinedSchema}
       />
       <Hero />
       <About />
       <Skills />
+      <Projects />
       <AIToolkit />
       <Experience />
       <ImageGallery />
