@@ -38,7 +38,7 @@ export default function ImageGallery() {
           {[...images, ...images].map((src, index) => (
             <div key={index} className="flex-none w-[300px] md:w-[450px] mx-4 rounded-2xl overflow-hidden glass-card p-2 group">
               <div className="relative w-full h-[200px] md:h-[300px] rounded-xl overflow-hidden">
-                <img src={src} alt={`Workshop Highlights ${index}`} loading="lazy" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                <img src={src} alt={`Workshop Highlights ${index}`} width="450" height="300" loading="lazy" decoding="async" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
               </div>
             </div>
           ))}

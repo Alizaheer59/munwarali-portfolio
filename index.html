@@ -23,7 +23,10 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap">
+    </noscript>
     
     <!-- Open Graph Tags (Facebook, LinkedIn, Pinterest) -->
     <meta property="og:title" content="Mohammed Munwar Ali Zaheer | Digital Marketing Specialist & AI Prompt Engineer" />
@@ -89,8 +92,7 @@
       gtag('config', 'G-3TC3N5VM11');
     </script>
 
-    <!-- Preload critical resources -->
-    <link rel="preload" href="/src/main.jsx" as="script">
+
   </head>
   <body class="bg-[#050505] text-white antialiased font-sans overflow-x-hidden selection:bg-purple-500/30 selection:text-purple-200">
     <div id="root"></div>
