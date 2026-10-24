@@ -38,20 +38,20 @@ Personality Traits & Languages
 
 Work Experience
 1. Transformix Global LLP (Jan 2026 – March 2026)
-   - Role: AI Digital Marketing Lead
-   - Designed and launched the company website and digital presence.
-   - Managed Google Workspace, employee onboarding, and IT infrastructure.
-   - Led digital marketing and go-to-market (GTM) initiatives.
-   - Implemented AI tools and process automation to improve operations.
+   - Role: Digital Marketing Specialist
+   - Designed and launched the company website to establish digital presence and inbound lead channels.
+   - Managed Google Workspace, digital assets, and marketing tech stack.
+   - Led digital marketing campaigns and go-to-market (GTM) growth initiatives.
+   - Optimized marketing funnels, performance metrics, and digital customer acquisition.
 
 2. HPCL – Skill Development Institute, Visakhapatnam (Jan 2024 – Dec 2025)
    - Role: Digital Marketing Specialist
-   - Created marketing creatives for digital campaigns and branding.
-   - Managed website content and improved online visibility.
-   - Supported social media marketing and audience engagement.
-   - Developed marketing content and promotional materials.
-   - Used AI tools for content creation and marketing workflows.
-   - Collaborated with cross-functional teams on marketing projects.
+   - Created marketing creatives for digital campaigns, brand positioning, and social channels.
+   - Managed website content, search visibility, and organic traffic growth.
+   - Executed social media marketing strategies to enhance community reach and audience engagement.
+   - Developed targeted promotional materials, ad copy, and campaign marketing assets.
+   - Analyzed campaign performance data, KPIs, and reporting to optimize marketing ROI.
+   - Collaborated with cross-functional teams to execute successful marketing projects.
 
 Education
 - Andhra University: MCA (online) | 2024–2026 (Pursuing)

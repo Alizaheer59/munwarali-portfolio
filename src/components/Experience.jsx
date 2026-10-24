@@ -1,6 +1,6 @@
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import { Briefcase, Calendar, MapPin } from 'lucide-react';
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { Calendar, MapPin } from "lucide-react";
 
 export default function Experience() {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.15 });
@@ -8,15 +8,15 @@ export default function Experience() {
   const experiences = [
     {
       company: "Transformix Global LLP",
-      role: "AI Digital Marketing Lead",
+      role: "Digital Marketing Specialist",
       duration: "Jan 2026 – March 2026",
       location: "Visakhapatnam, AP",
-      desc: "Spearheaded digital marketing initiatives, website design, and AI-driven process automation.",
+      desc: "Led digital marketing campaigns, brand positioning, website launch, and go-to-market execution.",
       points: [
-        "Designed and launched the company website and digital presence.",
-        "Managed Google Workspace, employee onboarding, and IT infrastructure.",
-        "Led digital marketing and go-to-market (GTM) initiatives.",
-        "Implemented AI tools and process automation to improve operations."
+        "Designed and launched the company website to establish strong digital presence and inbound lead channels.",
+        "Managed Google Workspace, digital assets, and marketing tech stack.",
+        "Led digital marketing campaigns and go-to-market (GTM) growth initiatives.",
+        "Optimized marketing funnels, performance metrics, and digital customer acquisition."
       ]
     },
     {
@@ -24,14 +24,14 @@ export default function Experience() {
       role: "Digital Marketing Specialist",
       duration: "Jan 2024 – Dec 2025",
       location: "Visakhapatnam, AP",
-      desc: "Drove digital marketing campaigns, creative branding, website content management, and audience growth.",
+      desc: "Drove multi-channel digital marketing campaigns, creative branding, website content management, and audience growth.",
       points: [
-        "Created marketing creatives for digital campaigns and branding.",
-        "Managed website content and improved online visibility.",
-        "Supported social media marketing and audience engagement.",
-        "Developed marketing content and promotional materials.",
-        "Used AI tools for content creation and marketing workflows.",
-        "Collaborated with cross-functional teams on marketing projects."
+        "Created marketing creatives for digital campaigns, brand positioning, and social channels.",
+        "Managed website content, search visibility, and organic traffic growth.",
+        "Executed social media marketing strategies to enhance community reach and audience engagement.",
+        "Developed targeted promotional materials, ad copy, and campaign marketing assets.",
+        "Analyzed campaign performance data, KPIs, and reporting to optimize marketing ROI.",
+        "Collaborated with cross-functional teams to execute successful marketing projects."
       ]
     }
   ];
