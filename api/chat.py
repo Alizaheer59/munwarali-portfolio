@@ -45,7 +45,7 @@ Work Experience
    - Optimized marketing funnels, performance metrics, and digital customer acquisition.
 
 2. HPCL – Skill Development Institute, Visakhapatnam (Jan 2024 – Dec 2025)
-   - Role: Digital Marketing Specialist
+   - Role: Digital Marketing Associate
    - Created marketing creatives for digital campaigns, brand positioning, and social channels.
    - Managed website content, search visibility, and organic traffic growth.
    - Executed social media marketing strategies to enhance community reach and audience engagement.

@@ -21,7 +21,7 @@ export default function Experience() {
     },
     {
       company: "HPCL – Skill Development Institute",
-      role: "Digital Marketing Specialist",
+      role: "Digital Marketing Associate",
       duration: "Jan 2024 – Dec 2025",
       location: "Visakhapatnam, AP",
       desc: "Drove multi-channel digital marketing campaigns, creative branding, website content management, and audience growth.",
