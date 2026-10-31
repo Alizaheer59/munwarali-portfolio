@@ -8,7 +8,7 @@ export default function Experience() {
   const experiences = [
     {
       company: "Transformix Global LLP",
-      role: "Digital Marketing Specialist",
+      role: "AI Operations Intern",
       duration: "Jan 2026 – March 2026",
       location: "Visakhapatnam, AP",
       desc: "Led digital marketing campaigns, brand positioning, website launch, and go-to-market execution.",

@@ -38,7 +38,7 @@ Personality Traits & Languages
 
 Work Experience
 1. Transformix Global LLP (Jan 2026 – March 2026)
-   - Role: Digital Marketing Specialist
+   - Role: AI Operations Intern
    - Designed and launched the company website to establish digital presence and inbound lead channels.
    - Managed Google Workspace, digital assets, and marketing tech stack.
    - Led digital marketing campaigns and go-to-market (GTM) growth initiatives.
