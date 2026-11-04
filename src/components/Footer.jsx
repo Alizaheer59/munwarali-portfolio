@@ -6,8 +6,7 @@ export default function Footer() {
           MA
         </div>
         
-        <p className="text-xl font-display font-medium text-white mb-2">Mohammed Munwar Ali Zaheer</p>
-        <p className="text-gray-400 text-sm mb-8">Human creativity powered by Artificial Intelligence.</p>
+        <p className="text-xl font-display font-medium text-white mb-6">Mohammed Munwar Ali Zaheer</p>
         
         <div className="flex gap-6 mb-8">
           <a href="#home" className="text-sm text-gray-400 hover:text-white transition-colors">Home</a>
