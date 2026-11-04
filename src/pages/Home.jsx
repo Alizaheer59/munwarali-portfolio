@@ -2,7 +2,6 @@ import SEO from '../components/SEO';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Skills from '../components/Skills';
-import Projects from '../components/Projects';
 import AIToolkit from '../components/AIToolkit';
 import Experience from '../components/Experience';
 import Education from '../components/Education';
@@ -48,7 +47,6 @@ export default function Home() {
       <Hero />
       <About />
       <Skills />
-      <Projects />
       <AIToolkit />
       <Experience />
       <Education />

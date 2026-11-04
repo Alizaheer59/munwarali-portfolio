@@ -66,7 +66,7 @@ export default function Hero() {
           {/* Action Buttons */}
           <motion.div variants={itemVariants} className="flex flex-wrap justify-center gap-4 mt-8">
             <a 
-              href="#projects" 
+              href="/portfolio" 
               className="px-7 py-3.5 rounded-xl bg-gradient-to-r from-[#FF3366] to-[#7C3AED] text-white font-semibold flex items-center gap-2 hover:scale-105 transition-transform shadow-[0_0_20px_rgba(255,51,102,0.4)]"
             >
               <Folder size={18} /> View Projects
