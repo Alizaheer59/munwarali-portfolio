@@ -1,6 +1,6 @@
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import { Award, CheckCircle } from 'lucide-react';
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { Award, CheckCircle } from "lucide-react";
 
 export default function Certifications() {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
@@ -20,6 +20,11 @@ export default function Certifications() {
       title: "Web Development with AI Certification",
       issuer: "Coursera",
       tag: "Web & AI"
+    },
+    {
+      title: "Agentic AI Certification",
+      issuer: "LinkedIn Learning",
+      tag: "Agentic AI"
     },
     {
       title: "Digital Marketing Certification",
@@ -47,7 +52,7 @@ export default function Certifications() {
           <div className="w-24 h-1 bg-gradient-to-r from-[#FF3366] to-[#7C3AED] mx-auto rounded-full"></div>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {certs.map((cert, index) => (
             <motion.div
               key={index}

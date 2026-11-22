@@ -63,6 +63,7 @@ Certifications
 - AI Tools Workshop certification from Be 10x
 - Generative AI Mastermind Certificate from Outskill Academy
 - Web Development with AI Certification by Coursera
+- Agentic AI Certification from LinkedIn Learning
 - Digital Marketing Certification – Skill Development Institute
 
 Core Services Offered

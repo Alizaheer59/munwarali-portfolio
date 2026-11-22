@@ -1,6 +1,6 @@
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import { CheckCircle2, Globe, HeartHandshake, Sparkles } from 'lucide-react';
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { CheckCircle2, Globe, HeartHandshake, Sparkles } from "lucide-react";
 
 export default function About() {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.15 });
@@ -30,7 +30,7 @@ export default function About() {
             Profile Overview
           </span>
           <h2 className="text-3xl md:text-5xl font-bold font-display mt-3 mb-4">
-            Digital Marketing & <span className="text-gradient">AI Prompt Engineering</span>
+            AI Prompt Engineer & <span className="text-gradient">Digital Marketing</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-[#FF3366] to-[#7C3AED] mx-auto rounded-full mb-10"></div>
         </motion.div>
@@ -49,18 +49,18 @@ export default function About() {
               </h3>
               
               <blockquote className="text-lg md:text-xl italic text-gray-200 mb-8 border-l-4 border-[#7C3AED] pl-6 text-left bg-white/5 py-4 rounded-r-xl">
-                "Combining creative digital marketing campaigns, analytical precision, and cutting-edge AI prompt engineering to build scalable growth systems."
+                "Passionate about leveraging AI and data-driven strategies to deliver impactful marketing solutions for technology-driven businesses."
               </blockquote>
 
               <div className="space-y-5 text-gray-300 text-base md:text-lg leading-relaxed">
                 <p>
-                  I am a <strong className="text-white">Digital Marketing Specialist</strong> skilled in digital marketing campaigns, web designing, SEO and content optimization, social media marketing, copywriting, and AI prompt engineering.
+                  I am a <strong className="text-white">Digital Marketing professional</strong> with experience in digital campaigns, content marketing, SEO, social media marketing & management, and website management.
                 </p>
                 <p>
-                  Experienced in competitor research, data analysis, campaign performance tracking, and preparing documentation and reports to support data-driven marketing decisions.
+                  Skilled in Generative AI, Large Language Models (LLMs), Prompt Engineering, Python, and AI-powered content creation to enhance marketing performance and customer engagement.
                 </p>
                 <p>
-                  Proficient in MS Office and Google Workspace, with the ability to create engaging marketing content, manage websites, optimize online visibility, and support business growth through AI-powered tools and effective digital marketing strategies.
+                  Proficient in developing marketing assets, optimizing digital presence, conducting competitor research, and collaborating with cross-functional teams to deliver measurable growth.
                 </p>
               </div>
             </div>

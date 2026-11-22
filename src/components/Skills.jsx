@@ -1,6 +1,6 @@
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import { Megaphone, Bot, Layout, BarChart3 } from 'lucide-react';
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { Megaphone, Bot, Layout, BarChart3 } from "lucide-react";
 
 export default function Skills() {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
@@ -11,10 +11,10 @@ export default function Skills() {
       title: "Digital Marketing & Growth",
       items: [
         "Digital Marketing Campaigns",
+        "Content Marketing",
         "SEO & Content Optimization",
         "Social Media Marketing",
-        "Competitor Research",
-        "Campaign Performance Tracking"
+        "Email Marketing (Basic)"
       ]
     },
     {
@@ -22,32 +22,32 @@ export default function Skills() {
       title: "AI & Prompt Engineering",
       items: [
         "AI Prompt Engineering",
-        "Generative AI Workflows",
+        "AI Marketing Automation",
+        "Generative AI & LLMs",
         "AI Content Creation",
-        "AI Tool Integration",
-        "Process Automation"
+        "Python Basics & AI Workflows"
       ]
     },
     {
       icon: Layout,
-      title: "Web & Creative Design",
+      title: "Web & Copywriting",
       items: [
         "Web Designing",
-        "Copywriting",
-        "Landing Page Design",
-        "Marketing Creatives & Visuals",
-        "Brand Visibility & Positioning"
+        "Landing Page Copywriting",
+        "Marketing Assets Creation",
+        "Digital Presence Optimization",
+        "Website Management"
       ]
     },
     {
       icon: BarChart3,
-      title: "Data, Systems & Reporting",
+      title: "Analytics & Strategy",
       items: [
-        "Data Analysis",
+        "Marketing Analytics (GA4 Basics)",
+        "Campaign Performance Tracking",
+        "Competitor Research",
         "Documenting & Reporting",
-        "Google Workspace",
-        "MS Office",
-        "Performance Analytics"
+        "Google Workspace & MS Office"
       ]
     }
   ];
