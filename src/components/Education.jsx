@@ -10,7 +10,7 @@ export default function Education() {
       institution: "Andhra University", 
       degree: "MCA", 
       duration: "2024–2026",
-      score: "Pursuing",
+      score: "CGPA: 8.5",
       desc: "Master of Computer Applications focusing on advanced computing, software systems, and data technologies."
     },
     { 
