@@ -30,7 +30,7 @@ export default function About() {
             Profile Overview
           </span>
           <h2 className="text-3xl md:text-5xl font-bold font-display mt-3 mb-4">
-            AI Prompt Engineer & <span className="text-gradient">Digital Marketing</span>
+            Digital Marketing Specialist & <span className="text-gradient">AI Prompt Engineer</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-[#FF3366] to-[#7C3AED] mx-auto rounded-full mb-10"></div>
         </motion.div>
@@ -49,7 +49,7 @@ export default function About() {
               </h3>
               
               <blockquote className="text-lg md:text-xl italic text-gray-200 mb-8 border-l-4 border-[#7C3AED] pl-6 text-left bg-white/5 py-4 rounded-r-xl">
-                "Passionate about leveraging AI and data-driven strategies to deliver impactful marketing solutions for technology-driven businesses."
+                "Passionate about leveraging data-driven strategies and modern marketing tools to deliver impactful solutions for growing businesses."
               </blockquote>
 
               <div className="space-y-5 text-gray-300 text-base md:text-lg leading-relaxed">
@@ -57,7 +57,7 @@ export default function About() {
                   I am a <strong className="text-white">Digital Marketing professional</strong> with experience in digital campaigns, content marketing, SEO, social media marketing & management, and website management.
                 </p>
                 <p>
-                  Skilled in Generative AI, Large Language Models (LLMs), Prompt Engineering, Python, and AI-powered content creation to enhance marketing performance and customer engagement.
+                  Experienced in executing performance-driven campaigns, optimizing digital presence, conducting competitor research, and utilizing modern tools to enhance marketing efficiency.
                 </p>
                 <p>
                   Proficient in developing marketing assets, optimizing digital presence, conducting competitor research, and collaborating with cross-functional teams to deliver measurable growth.

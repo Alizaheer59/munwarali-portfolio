@@ -23,8 +23,8 @@ The landing page serves as a live benchmark for effective conversion page design
   },
   {
     slug: 'ai-marketing-campaign',
-    title: 'Project 02: AI-Powered Digital Marketing Campaign',
-    category: 'Digital Marketing & AI',
+    title: 'Project 02: Multi-Channel Digital Marketing Campaign',
+    category: 'Digital Marketing',
     date: '2026',
     author: 'Munwar Ali',
     excerpt: 'End-to-end digital marketing campaign driven by AI prompt engineering, custom ad creatives, and performance tracking.',

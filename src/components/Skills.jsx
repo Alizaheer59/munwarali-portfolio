@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { Megaphone, Bot, Layout, BarChart3 } from "lucide-react";
+import { Megaphone, Layout, BarChart3, Wrench } from "lucide-react";
 
 export default function Skills() {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
@@ -15,17 +15,6 @@ export default function Skills() {
         "SEO & Content Optimization",
         "Social Media Marketing",
         "Email Marketing (Basic)"
-      ]
-    },
-    {
-      icon: Bot,
-      title: "AI & Prompt Engineering",
-      items: [
-        "AI Prompt Engineering",
-        "AI Marketing Automation",
-        "Generative AI & LLMs",
-        "AI Content Creation",
-        "Python Basics & AI Workflows"
       ]
     },
     {
@@ -47,7 +36,18 @@ export default function Skills() {
         "Campaign Performance Tracking",
         "Competitor Research",
         "Documenting & Reporting",
-        "Google Workspace & MS Office"
+        "Conversion Optimization"
+      ]
+    },
+    {
+      icon: Wrench,
+      title: "Marketing Tech & Tools",
+      items: [
+        "Google Workspace & MS Office",
+        "Meta Ads & Search Console",
+        "AI Marketing Tools",
+        "Prompt Engineering",
+        "Workflow Productivity"
       ]
     }
   ];

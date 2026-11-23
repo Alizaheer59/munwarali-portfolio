@@ -13,7 +13,7 @@ export default function Hero() {
 
   const highlights = [
     "Digital Marketing Campaigns",
-    "AI Prompt Engineering",
+    "Content Marketing",
     "SEO & Content Optimization",
     "Social Media Marketing",
     "Web Designing",
@@ -50,7 +50,7 @@ export default function Hero() {
           {/* Subtitle */}
           <motion.div variants={itemVariants} className="overflow-hidden max-w-3xl">
             <p className="mt-4 text-gray-300 text-base sm:text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-              Driving brand growth through high-converting digital marketing campaigns, data-backed SEO, modern web design, and cutting-edge AI prompt engineering workflows that accelerate business outcomes.
+              Driving brand growth through high-converting digital marketing campaigns, data-backed SEO, modern web design, and strategic content that accelerates business outcomes.
             </p>
           </motion.div>
 

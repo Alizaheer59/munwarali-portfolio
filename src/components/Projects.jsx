@@ -30,10 +30,10 @@ export default function Projects() {
       description: "Data-backed search engine optimization and answer-engine structure that increased organic discoverability and search impressions."
     },
     {
-      title: "AI Prompt Engineering & Workflow Automation",
-      category: "AI Workflow",
+      title: "Marketing Automation & Content Workflow",
+      category: "Marketing Automation",
       icon: Sparkles,
-      tech: ["Prompt Engineering", "ChatGPT", "Claude", "Google Workspace", "Automation"],
+      tech: ["Marketing Automation", "ChatGPT", "Google Workspace", "Content Strategy"],
       description: "Custom AI prompt templates and automated content generation workflows reducing manual marketing turnaround by 50%."
     }
   ];

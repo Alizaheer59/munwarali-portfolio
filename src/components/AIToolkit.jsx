@@ -7,9 +7,9 @@ export default function AIToolkit() {
   
   const categories = [
     { 
-      title: "AI & Prompting", 
+      title: "AI & Productivity", 
       icon: Bot, 
-      tools: ["ChatGPT", "Claude", "Gemini", "Perplexity", "Midjourney", "Prompt Engineering"] 
+      tools: ["ChatGPT", "Claude", "Gemini", "Perplexity", "Canva AI"] 
     },
     { 
       title: "Marketing & SEO", 

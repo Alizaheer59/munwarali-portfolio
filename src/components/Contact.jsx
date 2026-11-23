@@ -16,7 +16,7 @@ export default function Contact() {
 
   const services = [
     'Digital Marketing Campaigns',
-    'AI Prompt Engineering',
+    'Content & Creative Marketing',
     'SEO & Content Optimization',
     'Social Media Marketing',
     'Web Designing',
@@ -79,7 +79,7 @@ export default function Contact() {
               Have a Project or Growth Goal?
             </h3>
             <p className="text-gray-300 leading-relaxed text-base md:text-lg mb-4">
-              Whether you need strategic digital marketing campaigns, high-impact SEO, responsive web design, or custom AI prompt engineering workflows, I am here to help you scale.
+              Whether you need strategic digital marketing campaigns, high-impact SEO, responsive web design, or modern marketing solutions, I am here to help you scale.
             </p>
 
             {/* Phone */}
