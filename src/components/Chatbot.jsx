@@ -41,7 +41,10 @@ export default function Chatbot() {
       const data = await response.json();
       
       if (data.response) {
-        setMessages(prev => [...prev, { role: 'model', text: data.response }]);
+        const cleanResponse = data.response
+          .replace(/^\s*[*•]\s+/gm, "- ")
+          .replace(/\*/g, "");
+        setMessages(prev => [...prev, { role: 'model', text: cleanResponse }]);
       } else {
         setMessages(prev => [...prev, { role: 'model', text: data.error ? `Error: ${data.error} (${data.type})` : "Sorry, I'm having trouble connecting right now." }]);
       }
