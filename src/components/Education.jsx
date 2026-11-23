@@ -8,7 +8,7 @@ export default function Education() {
   const eduData = [
     { 
       institution: "Andhra University", 
-      degree: "MCA (online)", 
+      degree: "MCA", 
       duration: "2024–2026",
       score: "Pursuing",
       desc: "Master of Computer Applications focusing on advanced computing, software systems, and data technologies."

@@ -54,7 +54,7 @@ Work Experience
    - Collaborated with cross-functional teams to execute successful marketing projects.
 
 Education
-- Andhra University: MCA (online) | 2024–2026 (Pursuing)
+- Andhra University: MCA | 2024–2026 (Pursuing)
 - Aditya Degree College: BSc Computer Science | 2019–2022 | CGPA: 7.58
 - Sri Prakash Junior College: Intermediate | 2017–2019 | CGPA: 8.56
 - Sri Prakash Vidya Niketan: SSC | 2016–2017 | CGPA: 10.0
