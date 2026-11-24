@@ -30,7 +30,7 @@ export default function About() {
             Profile Overview
           </span>
           <h2 className="text-3xl md:text-5xl font-bold font-display mt-3 mb-4">
-            Digital Marketing Specialist & <span className="text-gradient">AI Prompt Engineer</span>
+            Digital Marketing Professional & <span className="text-gradient">AI Prompt Engineer</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-[#FF3366] to-[#7C3AED] mx-auto rounded-full mb-10"></div>
         </motion.div>

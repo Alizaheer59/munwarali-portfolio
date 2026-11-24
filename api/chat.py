@@ -33,7 +33,7 @@ CRITICAL TONE & FORMATTING RULES:
 
 Persona & Contact Details:
 - Name: Mohammed Munwar Ali Zaheer (Munwar Ali)
-- Role: Digital Marketing Specialist | AI Prompt Engineer
+- Role: Digital Marketing Professional | AI Prompt Engineer
 - Phone: +91 6303822359
 - WhatsApp: +91 9281422359
 - Email: alizaheermohammed@gmail.com
@@ -42,7 +42,7 @@ Persona & Contact Details:
 - LinkedIn: https://www.linkedin.com/in/munwaralizaheer
 
 Professional Profile:
-Munwar is a Digital Marketing Specialist skilled in multi-channel digital marketing campaigns, web designing, SEO and content optimization, social media marketing, copywriting, and AI prompt engineering.
+Munwar is a Digital Marketing Professional skilled in multi-channel digital marketing campaigns, web designing, SEO and content optimization, social media marketing, copywriting, and AI prompt engineering.
 Experienced in competitor research, data analysis, campaign performance tracking, and preparing documentation and reports to support data-driven marketing decisions.
 Proficient in MS Office and Google Workspace, with the ability to create engaging marketing content, manage websites, optimize online visibility, and support business growth through AI-powered tools and effective digital marketing strategies.
 

@@ -15,8 +15,8 @@ export default function Home() {
     "@type": "Person",
     "name": "Mohammed Munwar Ali Zaheer",
     "url": "https://munwarali.in",
-    "jobTitle": "Digital Marketing Specialist | AI Prompt Engineer",
-    "description": "Digital Marketing Specialist skilled in digital marketing campaigns, web designing, SEO and content optimization, copywriting, and AI prompt engineering.",
+    "jobTitle": "Digital Marketing Professional | AI Prompt Engineer",
+    "description": "Digital Marketing Professional skilled in digital marketing campaigns, web designing, SEO and content optimization, copywriting, and AI prompt engineering.",
     "telephone": "+916303822359",
     "email": "mailto:alizaheermohammed@gmail.com",
     "address": {
@@ -40,8 +40,8 @@ export default function Home() {
   return (
     <>
       <SEO 
-        title="Mohammed Munwar Ali Zaheer | Digital Marketing Specialist & AI Prompt Engineer" 
-        description="Digital Marketing Specialist & AI Prompt Engineer skilled in digital marketing campaigns, web designing, SEO, content optimization, and AI prompt engineering."
+        title="Mohammed Munwar Ali Zaheer | Digital Marketing Professional & AI Prompt Engineer" 
+        description="Digital Marketing Professional & AI Prompt Engineer skilled in digital marketing campaigns, web designing, SEO, content optimization, and AI prompt engineering."
         schema={combinedSchema}
       />
       <Hero />

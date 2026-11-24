@@ -33,7 +33,7 @@ export default function Hero() {
           <motion.div variants={itemVariants}>
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold tracking-wide uppercase bg-gradient-to-r from-[#FF3366]/10 to-[#7C3AED]/10 text-white border border-[#FF3366]/30 shadow-[0_0_15px_rgba(255,51,102,0.2)]">
               <Sparkles size={16} className="text-[#FF3366]" />
-              Digital Marketing Specialist | AI Prompt Engineer
+              Digital Marketing Professional | AI Prompt Engineer
             </span>
           </motion.div>
 
@@ -43,7 +43,7 @@ export default function Hero() {
               Mohammed Munwar Ali Zaheer
             </h1>
             <p className="mt-3 text-xl sm:text-2xl md:text-3xl font-semibold text-gray-200 font-display">
-              Digital Marketing Specialist <span className="text-[#FF3366]">&</span> AI Prompt Engineer
+              Digital Marketing Professional <span className="text-[#FF3366]">&</span> AI Prompt Engineer
             </p>
           </motion.div>
           
